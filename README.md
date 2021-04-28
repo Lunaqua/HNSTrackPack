@@ -16,6 +16,9 @@ You can take a look at the tracklist.txt file, or load up the game and find out!
 Check out https://wiki.tockdom.com for more tracks and other MKWii mods.
 To find out who made the tracks, for now just search them on the wiki.
 
+### I have a suggestion...
+Please make a pull request to the community branch, following the instructions contained in ./Tracklist/CommunitySuggestion.txt
+
 # Special Thanks
 CLF78, Ismy: for making this great mod.
 Track Creators: for doing what you've done for over 10 years now.
