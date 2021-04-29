@@ -1,0 +1,10 @@
+This file contains some suggestions for the community.
+Instead of just asking for a track. Please make a pull request to this branch and add to this file:
+nickname	-	Track I want added		-	Track I want it to replace.
+
+Or you could simply include the track you want to replace within your pull request with the corect filename.
+I would suggest that if possible too, you make edits to the common.bmg, and the tracklist, just so things stay consistant. Thanks ^-^.
+---------------------------------------------------------
+TheWhiskas27	-	Fishdom Island, Water Island
+mgnonz49	-	Petite Park, Justin's Big Box
+
