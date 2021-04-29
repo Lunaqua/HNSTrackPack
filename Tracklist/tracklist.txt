@@ -6,7 +6,7 @@ Navi's "HAVE FUN" Hide and Seek Pack.
 1.4 -	TF		-	Star Slope
 
 2.1 -	MC		-	Strobenz Desert
-2.2 -	CM		-	SM64 Whomp's Fortress	-	(*)
+2.2 -	CM		-	SM64 Whomp's Fortress
 2.3 -	DKSC	-	Cannon City
 2.4 -	WGM		-	asdf course
 
@@ -15,7 +15,7 @@ Navi's "HAVE FUN" Hide and Seek Pack.
 3.3 -	MT		-	Punch City 2
 3.4 -	GV		-	Incendia Castle
 
-4.1 -	DDR		-	Darky Cliff		-	(*)
+4.1 -	DDR		-	Darky Cliff
 4.2 -	MH		-	Wuhu Island Loop
 4.3 -	BC		-	Nuclear Power
 4.4 -	RR		-	SNES Rainbow Road
@@ -48,8 +48,6 @@ Potential Extra Candiates for Replacement
 Spacy Space Race
 The Void
 Bullet Tower
-
-
 
 -----------------------------------------------
 Rejected/Removed - Reason

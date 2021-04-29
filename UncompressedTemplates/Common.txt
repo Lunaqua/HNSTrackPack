@@ -16,7 +16,7 @@
   T14	= Star Slope
 
   T21	= Strobenz Desert
-  T22	= Cannon City III
+  T22	= SM64 Whomp's Fortress
   T23	= Cannon City
   T24	= asdf course
 
@@ -25,7 +25,7 @@
   T33	= Punch City 2
   T34	= Incendia Castle
 
-  T41	= THCHtTHCHtMP
+  T41	= Darky Cliff
   T42	= Wuhu Island Loop
   T43	= Nuclear Power
   T44	= SNES Rainbow Road
