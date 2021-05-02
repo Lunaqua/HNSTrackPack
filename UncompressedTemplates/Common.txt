@@ -31,7 +31,7 @@
   T44	= SNES Rainbow Road
 
   T51	= Bash 'n' Dash 'n' Bash
-  T52	= Big Nature City
+  T52	= The Void
   T53	= GBA Boo Lake
   T54	= F-Zero Big Blue
 

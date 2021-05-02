@@ -1,13 +1,13 @@
 Navi's "HAVE FUN" Hide and Seek Pack.
 -----------------------------------------------
-1.1 -	LC 		-	Nightmare
+1.1 -	LC		-	Nightmare
 1.2 -	MMM		-	Heart of China
 1.3 -	MG		-	Mushroom Mountain
 1.4 -	TF		-	Star Slope
 
 2.1 -	MC		-	Strobenz Desert
 2.2 -	CM		-	SM64 Whomp's Fortress
-2.3 -	DKSC	-	Cannon City
+2.3 -	DKSC		-	Cannon City
 2.4 -	WGM		-	asdf course
 
 3.1 -	DC		-	Suzuka Circuit		-	(Fix Speed Mod)
@@ -20,24 +20,24 @@ Navi's "HAVE FUN" Hide and Seek Pack.
 4.3 -	BC		-	Nuclear Power
 4.4 -	RR		-	SNES Rainbow Road
 
-5.1 -	gcPB	-	Bash 'n' Dash 'n' Bash
-5.2 -	dsYF	-	Big Nature City
-5.3 -	ssGV	-	GBA Boo Lake
-5.4 -	nMR		-	F-Zero Big Blue 	-	(Fix Speed Mod)
+5.1 -	gcPB		-	Bash 'n' Dash 'n' Bash
+5.2 -	dsYF		-	The Void
+5.3 -	ssGV		-	GBA Boo Lake
+5.4 -	nMR		-	F-Zero Big Blue		-	(Fix Speed Mod)
 
 6.1 -	nSL		-	PMWR Cloud Garden
-6.2 -	gSGB	-	N64 Yoshi Valley
-6.3 -	dsDS 	-	Monaco GP 
+6.2 -	gSGB		-	N64 Yoshi Valley
+6.3 -	dsDS		-	Monaco GP 
 6.4 -	gWS		-	Wario Colessium
 
-7.1 -	dsDH	-	Wuhu Mountain Loop
-7.2 -	gBC3	-	vvvvvv circuit
-7.3 -	nDJP	-	Electric Shredder
-7.4 -	gcMC	-	GP Mario Beach		-	(Fix Speed Mod) 
+7.1 -	dsDH		-	Wuhu Mountain Loop
+7.2 -	gBC3		-	vvvvvv circuit
+7.3 -	nDJP		-	Electric Shredder
+7.4 -	gcMC		-	GP Mario Beach		-	(Fix Speed Mod) 
 
-8.1 -	ssMC	-	Yellow Loop
-8.2 -	dsPG	-	DS Rainbow Road
-8.3 -	gcDKM	-	Vesuvio's Inferno
+8.1 -	ssMC		-	Yellow Loop
+8.2 -	dsPG		-	DS Rainbow Road
+8.3 -	gcDKM		-	Vesuvio's Inferno
 8.4 -	nBC		-	Melting Magma Melee
 
 *Probably looking to replace
@@ -46,7 +46,6 @@ Navi's "HAVE FUN" Hide and Seek Pack.
 Potential Extra Candiates for Replacement
 -----------------------------------------------
 Spacy Space Race
-The Void
 Bullet Tower
 
 -----------------------------------------------
@@ -54,3 +53,4 @@ Rejected/Removed - Reason
 -----------------------------------------------
 THCHtTHCHtMP - Way too difficult.
 Cannon City III	 - More than one Cannon City is not needed.
+Big Nature City - Track does not function correctly when combined with hns. (GV track patch I think)
