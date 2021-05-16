@@ -6,8 +6,10 @@ printf "This file will clean your repo, any allow you create a new build\n"
 printf "Press [enter] to DELETE ALL BUILT FILES, this includes the 'my stuff' directory\n"
 read dummy
 
-rm ./My\ Stuff/*
+rm -r ./My\ Stuff/*
 rmdir My\ Stuff
+
+rm ./*.7z
 
 cd UncompressedTemplates
 rm Common.bmg
@@ -16,6 +18,10 @@ rm MenuSingle_U.szs
 
 rm ./MenuSingle_E.d/message/Common.bmg
 rm ./MenuSingle_U.d/message/Common.bmg
+
+cd ..
+rm ./StaticR/PAL/StaticR.rel
+rm ./StaticR/NTSC-U/StaticR.rel
 
 printf "Cleaning complete!\n"
 printf "Press [enter] to exit\n"

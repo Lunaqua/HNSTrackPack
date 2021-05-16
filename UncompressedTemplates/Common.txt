@@ -146,14 +146,14 @@
   23d6	/
 
 #--- [23f0:23f7] racing cup names
-  23f0	= Retro Cup
-  23f1	= Big Cup
-  23f2	= Long Cup
-  23f3	= Harder Cup
-  23f4	= Classic Cup
-  23f5	= New Cup
-  23f6	= Short Cup
-  23f7	= Hardest Cup
+  23f0	= City Cup
+  23f1	= Tricky Cup
+  23f2	= Good Cup
+  23f3	= Classic Cup
+  23f4	= Large Cup
+  23f5	= Small Cup
+  23f6	= Sky/Space Cup
+  23f7	= Other Cup
 
   23f8	= Galaxy Arena
 
