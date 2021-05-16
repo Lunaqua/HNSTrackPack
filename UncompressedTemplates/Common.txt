@@ -11,7 +11,7 @@
 #--- standard track names
 
   T11	= Nightmare
-  T12	= Heart of China
+  T12	= Petite Park
   T13	= Mushroom Mountain
   T14	= Star Slope
 
@@ -30,10 +30,10 @@
   T43	= Nuclear Power
   T44	= SNES Rainbow Road
 
-  T51	= Bash 'n' Dash 'n' Bash
+  T51	= Rush City Run
   T52	= The Void
   T53	= GBA Boo Lake
-  T54	= F-Zero Big Blue
+  T54	= Fishdom Island
 
   T61	= PMWR Cloud Garden
   T62	= N64 Yoshi Valley
@@ -147,13 +147,13 @@
 
 #--- [23f0:23f7] racing cup names
   23f0	= Retro Cup
-  23f1	= Classic City Cup
+  23f1	= Big Cup
   23f2	= Long Cup
-  23f3	= Actually ok Cup
-  23f4	= Decent Cup
-  23f5	= Normal Cup
-  23f6	= :) Cup
-  23f7	= :)))) Cup
+  23f3	= Harder Cup
+  23f4	= Classic Cup
+  23f5	= New Cup
+  23f6	= Short Cup
+  23f7	= Hardest Cup
 
   23f8	= Galaxy Arena
 
@@ -162,8 +162,8 @@
   2488	= Coin Runners
 
 #--- [2489:248a] battle cup names
-  2489	= Wii Stages
-  248a	= Retro Stages
+  2489	= Battle Tracks
+  248a	= Are not replaced
 
   248b	/
 
