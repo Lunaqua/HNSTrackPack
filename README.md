@@ -19,6 +19,10 @@ To find out who made the tracks, for now just search them on the wiki.
 ### I have a suggestion...
 Please make a pull request to the community branch, following the instructions contained in ./Tracklist/CommunitySuggestion.txt
 
+### How do I use this
+Download the latest release. You can then use the pack as a mystuff with another distribution, or as a standalone riivolution pack.
+It is of course, intended for the Hide and Seek mod.
+
 # Special Thanks
 CLF78, Ismy: for making this great mod.
 Track Creators: for doing what you've done for over 10 years now.
