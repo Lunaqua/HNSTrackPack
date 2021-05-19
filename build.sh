@@ -35,6 +35,7 @@ mkdir "My Stuff"
 
 cp ./Tracklist/tracklist.txt My\ Stuff/
 cp ./Tracks/* My\ Stuff
+cp ./Arenas/* My\ Stuff
 cp ./UncompressedTemplates/MenuSingle_* My\ Stuff
 cp -r ./StaticR/ My\ Stuff
 

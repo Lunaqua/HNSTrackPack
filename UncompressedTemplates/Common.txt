@@ -54,15 +54,15 @@
 
   U11	= Block Plaza
   U12	= Delfino Pier
-  U13	= Funky Stadium
-  U14	= Chain Chomp Roulette
+  U13	= Bash 'n' Dash 'n' Bash
+  U14	= DS Tart Top
   U15	= Thwomp Desert
 
-  U21	= SNES Battle Course 4
+  U21	= 8-bit Road
   U22	= GBA Battle Course 3
   U23	= N64 Skyscraper
   U24	= GCN Cookie Land
-  U25	= DS Twilight House
+  U25	= Heart of China
 
   2328	= Mario
   2329	= Baby Peach
