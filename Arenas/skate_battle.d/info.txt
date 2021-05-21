@@ -1,0 +1,17 @@
+
+========================================
+ Bash 'n' Dash 'n' Battle  --  by Wiimm
+========================================
+
+This is the battle arena version of »Bash 'n' Dash 'n' Bash« v1.3 by Sucht93a.
+
+2018-08-21, v0.1 by Wiimm
+ - Racing track »Bash 'n' Dash 'n' Bash« v1.3 adapted.
+ - This arena was the main test object for the battle support of Wiimms SZS
+   Tools v1.60a with support of dispatch points and auto-connection of routes.
+ - Setup with 49 standard routes and 30 dispatch points.
+   All route links were inserted by the auto-connect feature of Wiimms tools.
+ - 42 start places and 47 respawn spaces for coins. All positions are
+   automatically calculated and set to the middle of the routes.
+ - 24 itemboxes in 5 rows. The racing track version has 12 boxes in 1 row.
+
