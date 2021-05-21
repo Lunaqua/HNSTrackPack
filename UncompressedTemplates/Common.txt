@@ -54,7 +54,7 @@
 
   U11	= Block Plaza
   U12	= Delfino Pier
-  U13	= Bash 'n' Dash 'n' Bash
+  U13	= Bash 'n' Dash 'n' Battle
   U14	= DS Tart Top
   U15	= Thwomp Desert
 
