@@ -56,7 +56,7 @@ Battle Arenas (Planned, not implemented yet)
 2.2 -	bBC3		-	Twisted Towers
 2.3 -	bS		-	GCN Pipe Plaza
 2.4 -	bCL		-	Delfino House
-2.5 -	bTH		-	Heart of China ^£ 
+2.5 -	bTH		-	Heart of China ^&£ 
  
 ^No patch required (in theory).
 *Probably looking to replace.
