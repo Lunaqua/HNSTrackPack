@@ -22,7 +22,7 @@ cd ..
 cd ..
 
 cd control/timg
-wszst encode *
+wimgt encode *
 cd ..
 cd ..
 
