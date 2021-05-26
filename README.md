@@ -20,5 +20,6 @@ To find out who made the tracks, for now just search them on the wiki.
 Please make a pull request to the community branch, following the instructions contained in ./Tracklist/CommunitySuggestion.txt
 
 # Special Thanks
-CLF78, Ismy: for making this great mod.
-Track Creators: for doing what you've done for over 10 years now.
+	CLF78, Ismy: for making this great mod.
+	Track Creators: for doing what you've done for over 10 years now.
+	DarkyBenji: creator of the mkdd gui and font mod.
