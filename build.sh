@@ -15,7 +15,36 @@ wbmgt encode Common.txt
 cp Common.bmg ./MenuSingle_E.d/message/
 cp Common.bmg ./MenuSingle_U.d/message/
 
-wszst create MenuSingle_E.d MenuSingle_U.d
+#Prepare MenuSingle
+cd MenuSingle.d/bg/timg
+wimgt encode *
+cd ..
+cd ..
+
+cd control/timg
+wszst encode *
+cd ..
+cd ..
+
+cd ..
+
+##
+#Prepare Race_*.d
+cd Race_E.d/game_image/timg
+wimgt encode *
+
+cd ..
+cd ..
+cd ..
+
+cd Race_U.d/game_image/timg
+wimgt encode *
+
+cd ..
+cd ..
+cd ..
+
+wszst create MenuSingle_E.d MenuSingle_U.d MenuSingle.d Font.d Race.d Race_E.d Race_U.d
 
 cd ..
 cd StaticR
@@ -36,8 +65,15 @@ mkdir "My Stuff"
 cp ./Tracklist/tracklist.txt My\ Stuff/
 cp ./Tracks/* My\ Stuff
 cp ./Arenas/* My\ Stuff
-cp ./UncompressedTemplates/MenuSingle_* My\ Stuff
+cp ./UncompressedTemplates/MenuSingle* My\ Stuff
+cp ./UncompressedTemplates/Font.szs My\ Stuff
+cp ./UncompressedTemplates/Race* My\ Stuff
 cp -r ./StaticR/ My\ Stuff
+
+cp ./ISOPatch/readme.txt My\ Stuff
+
+rm ./My\ Stuff/StaticR/P/StaticR.rel.bak
+rm ./My\ Stuff/StaticR/E/StaticR.rel.bak
 
 printf "\nMy Stuff has been prepared."
 printf "\nPress [enter] to exit"
