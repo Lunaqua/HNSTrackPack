@@ -1,10 +1,10 @@
 This document contain notes relating to the testing of custom battle arenas.
 
-B'n'D'n'Battle - Track crashes after GO!
+B'n'D'n'Battle - Track crashes after GO! in balloon battle
 
 8-Bit Road - Crashes at match end, may not affect Hide and Seek
 		Possible Fix - Download battle arena version of track, may require patch.
+		
+DS Tart Top - Unknown
 
-Heart of China - Map works correctly in Balloon Battle, should also work correctly in Hide and Seek.
-		 May initially spawn out of bounds.
-		Possible Fix - None needed.
+Heart of China - Good.
