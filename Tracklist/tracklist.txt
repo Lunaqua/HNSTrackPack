@@ -46,23 +46,25 @@ Navi's "HAVE FUN" Hide and Seek Pack.
 -----------------------------------------------
 Battle Arenas (Planned, not implemented yet)
 
-1.1 -	bBP		-	GCN Tilt-a-Kart
-1.2 -	bDP		-	Turtle Top
-1.3 -	bFS		-	Bash 'n' Dash 'n' Battle 
+1.1 -	bBP		-	GCN Tilt-a-Kart ¬&
+1.2 -	bDP		-	Turtle Top ¬&
+1.3 -	bFS		-	Bash 'n' Dash 'n' Battle ¬&
 1.4 -	bCCR		-	DS Tart Top ^£
-1.5 -	bTD		-	GCN Luigi Mansion
+1.5 -	bTD		-	GCN Luigi Mansion ¬&
 
-2.1 -	bBC4		-	8-bit Road &
-2.2 -	bBC3		-	Twisted Towers
-2.3 -	bS		-	GCN Pipe Plaza
-2.4 -	bCL		-	Delfino House
-2.5 -	bTH		-	Heart of China ^&£ 
+2.1 -	bBC4		-	8-bit Road ¬&
+2.2 -	bBC3		-	Twisted Towers ¬&
+2.3 -	bS		-	GCN Pipe Plaza ¬&
+2.4 -	bCL		-	Delfino House ¬&
+2.5 -	bTH		-	Heart of China ~
  
 ^No patch required (in theory).
+¬May require patch for hns
 *Probably looking to replace.
 !Patched,may work.
 &Working in Balloon Battle
 £Working in Hide and Seek
+~Works perfectly
 -----------------------------------------------
 Potential Extra Candiates for Replacement
 -----------------------------------------------
