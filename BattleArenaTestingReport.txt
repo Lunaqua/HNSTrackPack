@@ -1,6 +1,6 @@
 This document contain notes relating to the testing of custom battle arenas.
 
-GCN Tilt-a-Kart - Work correctly in balloon battle, will probably require patching for hns.
+GCN Tilt-a-Kart - Currently Unknown.
 
 Turtle Top - Work correctly in balloon battle, will probably require patching for hns.
 
@@ -8,13 +8,13 @@ B'n'D'n'Battle - Functions correctly in balloon battle, may require patching for
 
 DS Tart Top - Boots correctly. Crashes at match end. Will probably work in hns correctly.
 
-GCN Luigi's Mansion - Work correctly in balloon battle, will probably require patching for hns.
+GCN Luigi's Mansion - Currently Unknown.
 
 8-Bit Road - Functions correctly in balloon battle, may require patching for hns.
 		
 Twisted Towers - Unknown
 
-GCN Pipe Plaza - Unknown
+GCN Pipe Plaza - Currently Unknown.
 
 Delfino House - 
 
