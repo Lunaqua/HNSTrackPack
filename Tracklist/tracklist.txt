@@ -4,7 +4,7 @@ Navi's "HAVE FUN" Hide and Seek Pack.
 2.3 -	DKSC		-	Cannon City
 3.3 -	MT		-	Punch City 2
 5.1 -	gcPB		-	Rush City Run
-4.2 -	MH		-	Wuhu Island Loop
+4.2 -	MH		-	3DS Wuhu Island Loop
 
 1.1 -	LC		-	Nightmare
 4.1 -	DDR		-	Darky Cliff
@@ -13,7 +13,7 @@ Navi's "HAVE FUN" Hide and Seek Pack.
 
 8.4 -	nBC		-	Melting Magma Melee
 4.3 -	BC		-	Nuclear Power
-6.4 -	gWS		-	Wario Colessium
+6.4 -	gWS		-	GCN Wario Colosseum
 5.3 -	ssGV		-	GBA Boo Lake
 
 1.4 -	TF		-	Star Slope
@@ -38,7 +38,7 @@ Navi's "HAVE FUN" Hide and Seek Pack.
 
 5.4 -	nMR		-	Fishdom Island
 6.3 -	dsDS		-	Monaco GP 
-7.1 -	dsDH		-	Wuhu Mountain Loop
+7.1 -	dsDH		-	3DS Wuhu Mountain Loop
 7.4 -	gcMC		-	GP Mario Beach		-	(Fix Speed Mod) 
 
 *Probably looking to replace
