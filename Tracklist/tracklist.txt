@@ -33,7 +33,7 @@ Navi's "HAVE FUN" Hide and Seek Pack.
 
 4.4 -	RR		-	SNES Rainbow Road
 5.2 -	dsYF		-	The Void
-8.2 -	dsPG		-	DS Rainbow Road
+8.2 -	dsPG		-	DS Rainbow Road 
 6.1 -	nSL		-	PMWR Cloud Garden
 
 5.4 -	nMR		-	Fishdom Island
@@ -42,7 +42,7 @@ Navi's "HAVE FUN" Hide and Seek Pack.
 7.4 -	gcMC		-	GP Mario Beach		-	(Fix Speed Mod) 
 
 *Probably looking to replace
-
+!Need to update
 -----------------------------------------------
 Battle Arenas (Planned, not implemented yet)
 
