@@ -53,15 +53,15 @@
 #--- battle track names
 
   U11	= GCN Tilt-a-Kart
-  U12	= Turtle Top
-  U13	= Bash 'n' Dash 'n' Battle
+  U12	= Battle-Race Resort
+  U13	= Bash 'n' Dash 'n' Bash
   U14	= DS Tart Top
   U15	= GCN Luigi Mansion
 
-  U21	= 8-bit Road
-  U22	= Twisted Towers
+  U21	= DKR Star City
+  U22	= Neon Dimension
   U23	= GCN Pipe Plaza
-  U24	= Delfino House
+  U24	= SM64 Cool, Cool Mountain Slide
   U25	= Heart of China
 
   2328	= Mario
