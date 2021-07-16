@@ -52,17 +52,17 @@
 
 #--- battle track names
 
-  U11	= Block Plaza
-  U12	= Delfino Pier
-  U13	= Funky Stadium
-  U14	= Chain Chomp Roulette
-  U15	= Thwomp Desert
+  U11	= GCN Tilt-a-Kart
+  U12	= Battle-Race Resort
+  U13	= Bash 'n' Dash 'n' Bash
+  U14	= DS Tart Top
+  U15	= GCN Luigi Mansion
 
-  U21	= SNES Battle Course 4
-  U22	= GBA Battle Course 3
-  U23	= N64 Skyscraper
-  U24	= GCN Cookie Land
-  U25	= DS Twilight House
+  U21	= DKR Star City
+  U22	= Neon Dimension
+  U23	= GCN Pipe Plaza
+  U24	= SM64 Cool, Cool Mountain Slide
+  U25	= Heart of China
 
   2328	= Mario
   2329	= Baby Peach
@@ -162,8 +162,8 @@
   2488	= Coin Runners
 
 #--- [2489:248a] battle cup names
-  2489	= Battle Tracks
-  248a	= Are not replaced
+  2489	= Custom Cup
+  248a	= Retro Cup
 
   248b	/
 

@@ -1,0 +1,1448 @@
+
+###############################################################################
+#
+# wszst settings:
+# ---------------
+#
+# This is the settings file for wszst (tool of "Wiimms SZS Tools"). It
+# was created by the EXTRACT command and is needed by the CREATE command
+# to rebuild the original source archive with or without modifications.
+# You can edit it, if you know what you do.
+#
+###############################################################################
+
+# The first part contains some general settings:
+
+# The internal archive format (U8, WU8, BRRES, BREFF or BREFT):
+archive-format = U8
+
+# The file format (YAZ0, YAZ1 or BZ for a compressed archive, other ignored):
+file-format = YAZ0
+
+# An archive format related version number (-1: unknown or not relevant)
+version = -1
+
+# For U8+WU8 archives: Is there a special '.' base directory:
+have-pt-dir = 1
+
+# The minimum and maximum file data positions:
+min-data-offset = 0x0
+max-data-offset = 0x4b6380
+
+# The calculated alignment of all files:
+data-align = 0x20
+
+###############################################################################
+#
+# Some general rules for the next sections:
+#   All paths are relative to the current base directory (directory that
+#   contains the file wszst-setup.txt). Prefix at least paths that starts
+#   not with a letter, digit, point, star or underscore with "./".
+#
+#------------------------------------------------------------------------------
+
+[include-pattern]
+
+# All files and directories start with a . are hidden (unix like) and excluded
+# automatically. But filenames in one of the include sections are included
+# independent of this point. Also the include sections takes precedence over
+# the exclude sections.
+
+# This section expects file patterns with wildcards.
+
+#------------------------------------------------------------------------------
+
+[include]
+
+# This second include section accpepts only complete file names and none of
+# characters have any special meaning.
+
+
+#------------------------------------------------------------------------------
+
+[exclude-pattern]
+
+# Files and directories in this section are ignored by the CREATE command.
+# The include sections takes precedence over the exclude sections.
+
+# This section expects file patterns with wildcards.
+# Here we exclude all original, backup and temp files:
+
+*.orig
+*.bak
+*.tmp
+*.temp
+
+# Exclude all *.d directories. To enable it, remove "# " at the beginning.
+# *.d
+
+# Exclude all PNG files. The intention is to allow the creation of new PNG
+# images and mipmap files without any need to edit this setup file. All
+# extracted PNG files are automatically listed in the [exclude] section.
+# So the exclusion of all PNG is not really needed, but may help. The second
+# (disabled) line is an alternative to exclude all mipmap PNG files.
+
+*.png
+# *.mm#.png
+
+#------------------------------------------------------------------------------
+
+[exclude]
+
+# Files and directories in this section are ignored by the CREATE command.
+# This second exclude section accepts only complete file names and none of
+# characters have any special meaning.
+
+./button/timg/fm_nikoniko_mark .tpl.d
+./button/timg/tt_gr_maru_normal_00.tpl.d
+./button/timg/tt_pattern_chek_bokashi_32x32.tpl.d
+./button/timg/tt_window_vol3sono2.tpl.d
+./control/timg/ht_squareWhite_00.tpl.d
+./control/timg/tt_block_16x16.tpl.d
+./control/timg/tt_d_number_3d_00.tpl.d
+./control/timg/tt_d_number_3d_01.tpl.d
+./control/timg/tt_d_number_3d_02.tpl.d
+./control/timg/tt_d_number_3d_03.tpl.d
+./control/timg/tt_d_number_3d_04.tpl.d
+./control/timg/tt_d_number_3d_05.tpl.d
+./control/timg/tt_d_number_3d_06.tpl.d
+./control/timg/tt_d_number_3d_07.tpl.d
+./control/timg/tt_d_number_3d_08.tpl.d
+./control/timg/tt_d_number_3d_09.tpl.d
+./control/timg/tt_d_number_3d_coron.tpl.d
+./control/timg/tt_glass_sphere.tpl.d
+./control/timg/tt_mario_64x64.tpl.d
+./control/timg/tt_pattern_chek_32x32_alpha.tpl.d
+./control/timg/tt_pattern_chek_bokashi_32x32.tpl.d
+./control/timg/tt_star_01.tpl.d
+./course.kcl.d
+./course.kcl.flag
+./course.kcl.mtl
+./course.kcl.obj
+./course.kmp.d
+./course.kmp.txt
+./course.lex.txt
+./demo/timg/st_battle_icon_balloon.tpl.d
+./demo/timg/st_battle_icon_coin.tpl.d
+./demo/timg/st_battle_icon_flag.tpl.d
+./demo/timg/tt_cup_icon_banana_00.tpl.d
+./demo/timg/tt_cup_icon_flower_00.tpl.d
+./demo/timg/tt_cup_icon_kinoko_00.tpl.d
+./demo/timg/tt_cup_icon_konoha_00.tpl.d
+./demo/timg/tt_cup_icon_koura_00.tpl.d
+./demo/timg/tt_cup_icon_mirror_00.tpl.d
+./demo/timg/tt_cup_icon_oukan_00.tpl.d
+./demo/timg/tt_cup_icon_star_00.tpl.d
+./demo/timg/tt_cup_icon_thunder_00.tpl.d
+./demo/timg/tt_hatena_64x64.tpl.d
+./dpd_pointer/timg/cursor0.tpl.d
+./dpd_pointer/timg/tt_i_cursor_nakami_ver0.tpl.d
+./dpd_pointer/timg/tt_i_cursor_shikaku.tpl.d
+./dpd_pointer/timg/tt_i_cursor_tongari.tpl.d
+./effect/RKMenu.breff.d
+./effect/RKMenu.breft.d
+./game_image/timg/fm_cla_con_a.tpl.d
+./game_image/timg/fm_cla_con_new_l.tpl.d
+./game_image/timg/fm_cla_con_new_r.tpl.d
+./game_image/timg/fm_con_sen000.tpl.d
+./game_image/timg/fm_gc_con_new_a.tpl.d
+./game_image/timg/fm_gc_con_new_l.tpl.d
+./game_image/timg/fm_gc_con_new_r.tpl.d
+./game_image/timg/fm_gc_con_new_stick.tpl.d
+./game_image/timg/fm_handle_0.tpl.d
+./game_image/timg/fm_handle_juji.tpl.d
+./game_image/timg/fm_handle_new_1.tpl.d
+./game_image/timg/fm_handle_new_2.tpl.d
+./game_image/timg/fm_handle_new_x.tpl.d
+./game_image/timg/fm_item_gesso.tpl.d
+./game_image/timg/fm_item_kinoko_l.tpl.d
+./game_image/timg/fm_item_pikakumo.tpl.d
+./game_image/timg/fm_item_pow.tpl.d
+./game_image/timg/ht_squareWhite_00.tpl.d
+./game_image/timg/ij_wipe_a.tpl.d
+./game_image/timg/item_banana_3.tpl.d
+./game_image/timg/st_aka1_32x32.tpl.d
+./game_image/timg/st_aka2_32x32.tpl.d
+./game_image/timg/st_ao1_32x32.tpl.d
+./game_image/timg/st_ao2_32x32.tpl.d
+./game_image/timg/st_baby_daisy_32x32.tpl.d
+./game_image/timg/st_baby_luigi_32x32.tpl.d
+./game_image/timg/st_baby_mario_32x32.tpl.d
+./game_image/timg/st_baby_peach_32x32.tpl.d
+./game_image/timg/st_begoman_32x32.tpl.d
+./game_image/timg/st_catherine_32x32.tpl.d
+./game_image/timg/st_daisy_32x32.tpl.d
+./game_image/timg/st_didy_32x32.tpl.d
+./game_image/timg/st_donky_32x32.tpl.d
+./game_image/timg/st_dossun_32x32.tpl.d
+./game_image/timg/st_fuky_32x32.tpl.d
+./game_image/timg/st_hanachan_32x32.tpl.d
+./game_image/timg/st_hone_koopa_32x32.tpl.d
+./game_image/timg/st_karon_32x32.tpl.d
+./game_image/timg/st_kinopico_32x32.tpl.d
+./game_image/timg/st_kinopio_32x32.tpl.d
+./game_image/timg/st_kojin1_32x32.tpl.d
+./game_image/timg/st_kojin2_32x32.tpl.d
+./game_image/timg/st_koopa_32x32.tpl.d
+./game_image/timg/st_koopa_jr_32x32.tpl.d
+./game_image/timg/st_luigi_32x32.tpl.d
+./game_image/timg/st_mario_32x32.tpl.d
+./game_image/timg/st_noko_32x32.tpl.d
+./game_image/timg/st_peach_32x32.tpl.d
+./game_image/timg/st_roseta_32x32.tpl.d
+./game_image/timg/st_sambo_body_32x32.tpl.d
+./game_image/timg/st_sambo_head_32x32.tpl.d
+./game_image/timg/st_teresa_32x32.tpl.d
+./game_image/timg/st_waluigi_32x32.tpl.d
+./game_image/timg/st_wanwan_32x32.tpl.d
+./game_image/timg/st_wario_32x32.tpl.d
+./game_image/timg/st_yoshi_32x32.tpl.d
+./game_image/timg/tt_baby_daisy_64x64.tpl.d
+./game_image/timg/tt_baby_luigi_64x64.tpl.d
+./game_image/timg/tt_baby_mario_64x64.tpl.d
+./game_image/timg/tt_baby_peach_64x64.tpl.d
+./game_image/timg/tt_block_16x16.tpl.d
+./game_image/timg/tt_block_4x4.tpl.d
+./game_image/timg/tt_blue_minus.tpl.d
+./game_image/timg/tt_blue_plus.tpl.d
+./game_image/timg/tt_boss_packun_64x64.tpl.d
+./game_image/timg/tt_catherine_64x64.tpl.d
+./game_image/timg/tt_chase_icon.tpl.d
+./game_image/timg/tt_chase_icon_light.tpl.d
+./game_image/timg/tt_clacon_body.tpl.d
+./game_image/timg/tt_coin_type1_000.tpl.d
+./game_image/timg/tt_d_number_3d_00.tpl.d
+./game_image/timg/tt_d_number_3d_01.tpl.d
+./game_image/timg/tt_d_number_3d_02.tpl.d
+./game_image/timg/tt_d_number_3d_03.tpl.d
+./game_image/timg/tt_d_number_3d_04.tpl.d
+./game_image/timg/tt_d_number_3d_05.tpl.d
+./game_image/timg/tt_d_number_3d_06.tpl.d
+./game_image/timg/tt_d_number_3d_07.tpl.d
+./game_image/timg/tt_d_number_3d_08.tpl.d
+./game_image/timg/tt_d_number_3d_09.tpl.d
+./game_image/timg/tt_daisy_64x64.tpl.d
+./game_image/timg/tt_didy_64x64.tpl.d
+./game_image/timg/tt_donky_64x64.tpl.d
+./game_image/timg/tt_fence_32x32.tpl.d
+./game_image/timg/tt_funky_64x64.tpl.d
+./game_image/timg/tt_gccon_body.tpl.d
+./game_image/timg/tt_gold_handle.tpl.d
+./game_image/timg/tt_hammer_64x64.tpl.d
+./game_image/timg/tt_hatena_64x64.tpl.d
+./game_image/timg/tt_hone_koopa_64x64.tpl.d
+./game_image/timg/tt_item_GoldenKinoko.tpl.d
+./game_image/timg/tt_item_banana.tpl.d
+./game_image/timg/tt_item_bomb_hei.tpl.d
+./game_image/timg/tt_item_box_glass_type_02.tpl.d
+./game_image/timg/tt_item_dummybox.tpl.d
+./game_image/timg/tt_item_empty.tpl.d
+./game_image/timg/tt_item_hanachan.tpl.d
+./game_image/timg/tt_item_honeBall.tpl.d
+./game_image/timg/tt_item_kame_green.tpl.d
+./game_image/timg/tt_item_kame_green_3.tpl.d
+./game_image/timg/tt_item_kame_red.tpl.d
+./game_image/timg/tt_item_kame_red_3.tpl.d
+./game_image/timg/tt_item_kame_wing.tpl.d
+./game_image/timg/tt_item_killer.tpl.d
+./game_image/timg/tt_item_kinoko.tpl.d
+./game_image/timg/tt_item_kinoko_2.tpl.d
+./game_image/timg/tt_item_kinoko_3.tpl.d
+./game_image/timg/tt_item_new1.tpl.d
+./game_image/timg/tt_item_new2.tpl.d
+./game_image/timg/tt_item_new3.tpl.d
+./game_image/timg/tt_item_star.tpl.d
+./game_image/timg/tt_item_thunder.tpl.d
+./game_image/timg/tt_item_wanwan.tpl.d
+./game_image/timg/tt_karon_64x64.tpl.d
+./game_image/timg/tt_kinoko_32x32.tpl.d
+./game_image/timg/tt_kinopico_64x64.tpl.d
+./game_image/timg/tt_kinopio_64x64.tpl.d
+./game_image/timg/tt_koopa_64x64.tpl.d
+./game_image/timg/tt_koopa_jr_64x64.tpl.d
+./game_image/timg/tt_level_icon_handol_star2.tpl.d
+./game_image/timg/tt_luigi_64x64.tpl.d
+./game_image/timg/tt_map_chara_searchlight.tpl.d
+./game_image/timg/tt_mario_64x64.tpl.d
+./game_image/timg/tt_mario_battle_font_blue_00.tpl.d
+./game_image/timg/tt_mario_battle_font_blue_01.tpl.d
+./game_image/timg/tt_mario_battle_font_blue_02.tpl.d
+./game_image/timg/tt_mario_battle_font_blue_03.tpl.d
+./game_image/timg/tt_mario_battle_font_blue_04.tpl.d
+./game_image/timg/tt_mario_battle_font_blue_05.tpl.d
+./game_image/timg/tt_mario_battle_font_blue_06.tpl.d
+./game_image/timg/tt_mario_battle_font_blue_07.tpl.d
+./game_image/timg/tt_mario_battle_font_blue_08.tpl.d
+./game_image/timg/tt_mario_battle_font_blue_09.tpl.d
+./game_image/timg/tt_mario_battle_font_red_00.tpl.d
+./game_image/timg/tt_mario_battle_font_red_01.tpl.d
+./game_image/timg/tt_mario_battle_font_red_02.tpl.d
+./game_image/timg/tt_mario_battle_font_red_03.tpl.d
+./game_image/timg/tt_mario_battle_font_red_04.tpl.d
+./game_image/timg/tt_mario_battle_font_red_05.tpl.d
+./game_image/timg/tt_mario_battle_font_red_06.tpl.d
+./game_image/timg/tt_mario_battle_font_red_07.tpl.d
+./game_image/timg/tt_mario_battle_font_red_08.tpl.d
+./game_image/timg/tt_mario_battle_font_red_09.tpl.d
+./game_image/timg/tt_mario_battle_font_red_haifun.tpl.d
+./game_image/timg/tt_mg_windiw_vol3_ll.tpl.d
+./game_image/timg/tt_mg_windiw_vol3_lu.tpl.d
+./game_image/timg/tt_mg_windiw_vol3_rl.tpl.d
+./game_image/timg/tt_mg_windiw_vol3_ru.tpl.d
+./game_image/timg/tt_mii_suit_a_64x64.tpl.d
+./game_image/timg/tt_mii_suit_b_64x64.tpl.d
+./game_image/timg/tt_mii_suit_c_64x64.tpl.d
+./game_image/timg/tt_noko_64x64.tpl.d
+./game_image/timg/tt_nunchaku_new_stick.tpl.d
+./game_image/timg/tt_nunchaku_new_z.tpl.d
+./game_image/timg/tt_pata_64x64.tpl.d
+./game_image/timg/tt_pattern_chek_32x32_alpha.tpl.d
+./game_image/timg/tt_pattern_chek_alpha_nasi_32x32.tpl.d
+./game_image/timg/tt_pattern_chek_bokashi_32x32.tpl.d
+./game_image/timg/tt_peach_64x64.tpl.d
+./game_image/timg/tt_race_chara_name_line_gray_map_ver00.tpl.d
+./game_image/timg/tt_race_chara_name_line_white_ver00.tpl.d
+./game_image/timg/tt_race_chara_name_only_line_gray_ver02.tpl.d
+./game_image/timg/tt_red_minus.tpl.d
+./game_image/timg/tt_red_plus.tpl.d
+./game_image/timg/tt_remocon_han_body.tpl.d
+./game_image/timg/tt_remocon_nun_body.tpl.d
+./game_image/timg/tt_remokon_new_a.tpl.d
+./game_image/timg/tt_remokon_new_b.tpl.d
+./game_image/timg/tt_roseta_64x64.tpl.d
+./game_image/timg/tt_start_line_22.tpl.d
+./game_image/timg/tt_start_line_32x32tga.tpl.d
+./game_image/timg/tt_teresa_64x64.tpl.d
+./game_image/timg/tt_waluigi_64x64.tpl.d
+./game_image/timg/tt_wario_64x64.tpl.d
+./game_image/timg/tt_yoshi_64x64.tpl.d
+./message_window/timg/tt_fukidashi_window_kado_common.tpl.d
+./message_window/timg/tt_glass_waku_180.tpl.d
+./message_window/timg/tt_pattern_chek_32x32.tpl.d
+./message_window/timg/tt_pattern_chek_alpha_nasi_32x32.tpl.d
+./message_window/timg/tt_pattern_chek_bokashi_32x32.tpl.d
+./pad_recognize/timg/tt_a_body.tpl.d
+./pad_recognize/timg/tt_a_light.tpl.d
+./pad_recognize/timg/tt_clacon_body.tpl.d
+./pad_recognize/timg/tt_clacon_light.tpl.d
+./pad_recognize/timg/tt_fukidashi_window_kado_common.tpl.d
+./pad_recognize/timg/tt_gccon_body.tpl.d
+./pad_recognize/timg/tt_gccon_light.tpl.d
+./pad_recognize/timg/tt_gccon_waku.tpl.d
+./pad_recognize/timg/tt_hatena_body.tpl.d
+./pad_recognize/timg/tt_hatena_light.tpl.d
+./pad_recognize/timg/tt_pattern_chek_alpha_nasi_32x32.tpl.d
+./pad_recognize/timg/tt_pattern_chek_bokashi_32x32.tpl.d
+./pad_recognize/timg/tt_remocon_han_body.tpl.d
+./pad_recognize/timg/tt_remocon_han_light.tpl.d
+./pad_recognize/timg/tt_remocon_nun_body.tpl.d
+./pad_recognize/timg/tt_remocon_nun_light.tpl.d
+./result/timg/ht_squareWhite_00.tpl.d
+./result/timg/tt_baby_daisy_64x64.tpl.d
+./result/timg/tt_baby_luigi_64x64.tpl.d
+./result/timg/tt_baby_mario_64x64.tpl.d
+./result/timg/tt_baby_peach_64x64.tpl.d
+./result/timg/tt_block_16x16.tpl.d
+./result/timg/tt_boss_packun_64x64.tpl.d
+./result/timg/tt_catherine_64x64.tpl.d
+./result/timg/tt_daisy_64x64.tpl.d
+./result/timg/tt_didy_64x64.tpl.d
+./result/timg/tt_donky_64x64.tpl.d
+./result/timg/tt_funky_64x64.tpl.d
+./result/timg/tt_hammer_64x64.tpl.d
+./result/timg/tt_hatena_64x64.tpl.d
+./result/timg/tt_hone_koopa_64x64.tpl.d
+./result/timg/tt_karon_64x64.tpl.d
+./result/timg/tt_kinopico_64x64.tpl.d
+./result/timg/tt_kinopio_64x64.tpl.d
+./result/timg/tt_koopa_64x64.tpl.d
+./result/timg/tt_koopa_jr_64x64.tpl.d
+./result/timg/tt_luigi_64x64.tpl.d
+./result/timg/tt_mario_64x64.tpl.d
+./result/timg/tt_mii_suit_a_64x64.tpl.d
+./result/timg/tt_mii_suit_b_64x64.tpl.d
+./result/timg/tt_mii_suit_c_64x64.tpl.d
+./result/timg/tt_noko_64x64.tpl.d
+./result/timg/tt_pata_64x64.tpl.d
+./result/timg/tt_pattern_chek_32x32_alpha.tpl.d
+./result/timg/tt_pattern_chek_bokashi_32x32.tpl.d
+./result/timg/tt_peach_64x64.tpl.d
+./result/timg/tt_roseta_64x64.tpl.d
+./result/timg/tt_teresa_64x64.tpl.d
+./result/timg/tt_waluigi_64x64.tpl.d
+./result/timg/tt_wario_64x64.tpl.d
+./result/timg/tt_yoshi_64x64.tpl.d
+./wszst-setup.txt
+
+#------------------------------------------------------------------------------
+
+[encode]
+
+# Encode (and overwrite without notice) the listed files before adding them
+# to the new archive. The source is searched under the same filename with the
+# correct source extension added or, if this failed, a replaced extension.
+#   Example: For "message.bmg" search files "message.bmg.txt" or "message.txt"
+# The source file itself is set on the exclude list and will not stored into
+# the new archive.
+#
+# The syntax of this file section is a little bit different as the other file
+# sections. Each line begins with a comma separated list of keywords followed
+# by an equal sign.
+#   Syntax:  COMMA_SEPARATED_FORMAT_LIST = relative_filename
+#   Example: BREFT,IA8,3 = ./files/rk_steam
+# The first keyword is the file format. The following keywords describe sub
+# formats. An additonal integer is a file type specific information:
+#  -> For image files it is the number of images (main image + mipmaps).
+#     A value of 0 means: Use the tools default (see option --n-mipmaps).
+#
+# A file is only encoded if the destination does not exist or if the source
+# is younger than the destination. Encoding can be controlled by options
+# --no-encode, --encode-img and --encode-all (short: --noenc --eimg --eall).
+
+TPL,IA8,1	= ./button/timg/fm_nikoniko_mark .tpl
+TPL,IA8,1	= ./button/timg/tt_gr_maru_normal_00.tpl
+TPL,RGB5A3,1	= ./button/timg/tt_pattern_chek_bokashi_32x32.tpl
+TPL,IA4,1	= ./button/timg/tt_window_vol3sono2.tpl
+TPL,I4,1	= ./control/timg/ht_squareWhite_00.tpl
+TPL,IA4,1	= ./control/timg/tt_block_16x16.tpl
+TPL,RGB5A3,1	= ./control/timg/tt_d_number_3d_00.tpl
+TPL,RGB5A3,1	= ./control/timg/tt_d_number_3d_01.tpl
+TPL,RGB5A3,1	= ./control/timg/tt_d_number_3d_02.tpl
+TPL,RGB5A3,1	= ./control/timg/tt_d_number_3d_03.tpl
+TPL,RGB5A3,1	= ./control/timg/tt_d_number_3d_04.tpl
+TPL,RGB5A3,1	= ./control/timg/tt_d_number_3d_05.tpl
+TPL,RGB5A3,1	= ./control/timg/tt_d_number_3d_06.tpl
+TPL,RGB5A3,1	= ./control/timg/tt_d_number_3d_07.tpl
+TPL,RGB5A3,1	= ./control/timg/tt_d_number_3d_08.tpl
+TPL,RGB5A3,1	= ./control/timg/tt_d_number_3d_09.tpl
+TPL,RGB5A3,1	= ./control/timg/tt_d_number_3d_coron.tpl
+TPL,IA8,1	= ./control/timg/tt_glass_sphere.tpl
+TPL,RGB5A3,1	= ./control/timg/tt_mario_64x64.tpl
+TPL,RGB5A3,1	= ./control/timg/tt_pattern_chek_32x32_alpha.tpl
+TPL,RGB5A3,1	= ./control/timg/tt_pattern_chek_bokashi_32x32.tpl
+TPL,IA8,1	= ./control/timg/tt_star_01.tpl
+KCL		= ./course.kcl
+KMP		= ./course.kmp
+LEX		= ./course.lex
+TPL,RGB5A3,1	= ./demo/timg/st_battle_icon_balloon.tpl
+TPL,RGB5A3,1	= ./demo/timg/st_battle_icon_coin.tpl
+TPL,RGB5A3,1	= ./demo/timg/st_battle_icon_flag.tpl
+TPL,RGB5A3,1	= ./demo/timg/tt_cup_icon_banana_00.tpl
+TPL,RGB5A3,1	= ./demo/timg/tt_cup_icon_flower_00.tpl
+TPL,RGB5A3,1	= ./demo/timg/tt_cup_icon_kinoko_00.tpl
+TPL,RGB5A3,1	= ./demo/timg/tt_cup_icon_konoha_00.tpl
+TPL,RGB5A3,1	= ./demo/timg/tt_cup_icon_koura_00.tpl
+TPL,RGB5A3,1	= ./demo/timg/tt_cup_icon_mirror_00.tpl
+TPL,RGB5A3,1	= ./demo/timg/tt_cup_icon_oukan_00.tpl
+TPL,RGB5A3,1	= ./demo/timg/tt_cup_icon_star_00.tpl
+TPL,RGB5A3,1	= ./demo/timg/tt_cup_icon_thunder_00.tpl
+TPL,RGB5A3,1	= ./demo/timg/tt_hatena_64x64.tpl
+TPL,I8,1	= ./dpd_pointer/timg/cursor0.tpl
+TPL,IA4,1	= ./dpd_pointer/timg/tt_i_cursor_nakami_ver0.tpl
+TPL,IA4,1	= ./dpd_pointer/timg/tt_i_cursor_shikaku.tpl
+TPL,IA8,1	= ./dpd_pointer/timg/tt_i_cursor_tongari.tpl
+TPL,RGB5A3,1	= ./game_image/timg/fm_cla_con_a.tpl
+TPL,RGB5A3,1	= ./game_image/timg/fm_cla_con_new_l.tpl
+TPL,RGB5A3,1	= ./game_image/timg/fm_cla_con_new_r.tpl
+TPL,C4,P-RGB565,1	= ./game_image/timg/fm_con_sen000.tpl
+TPL,RGB5A3,1	= ./game_image/timg/fm_gc_con_new_a.tpl
+TPL,RGB5A3,1	= ./game_image/timg/fm_gc_con_new_l.tpl
+TPL,RGB5A3,1	= ./game_image/timg/fm_gc_con_new_r.tpl
+TPL,RGB5A3,1	= ./game_image/timg/fm_gc_con_new_stick.tpl
+TPL,RGB5A3,1	= ./game_image/timg/fm_handle_0.tpl
+TPL,IA4,1	= ./game_image/timg/fm_handle_juji.tpl
+TPL,RGB5A3,1	= ./game_image/timg/fm_handle_new_1.tpl
+TPL,RGB5A3,1	= ./game_image/timg/fm_handle_new_2.tpl
+TPL,RGB5A3,1	= ./game_image/timg/fm_handle_new_x.tpl
+TPL,RGB5A3,1	= ./game_image/timg/fm_item_gesso.tpl
+TPL,RGB5A3,1	= ./game_image/timg/fm_item_kinoko_l.tpl
+TPL,RGB5A3,1	= ./game_image/timg/fm_item_pikakumo.tpl
+TPL,RGB5A3,1	= ./game_image/timg/fm_item_pow.tpl
+TPL,I4,1	= ./game_image/timg/ht_squareWhite_00.tpl
+TPL,I4,1	= ./game_image/timg/ij_wipe_a.tpl
+TPL,RGB5A3,1	= ./game_image/timg/item_banana_3.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_aka1_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_aka2_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_ao1_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_ao2_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_baby_daisy_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_baby_luigi_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_baby_mario_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_baby_peach_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_begoman_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_catherine_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_daisy_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_didy_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_donky_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_dossun_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_fuky_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_hanachan_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_hone_koopa_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_karon_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_kinopico_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_kinopio_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_kojin1_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_kojin2_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_koopa_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_koopa_jr_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_luigi_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_mario_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_noko_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_peach_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_roseta_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_sambo_body_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_sambo_head_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_teresa_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_waluigi_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_wanwan_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_wario_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/st_yoshi_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_baby_daisy_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_baby_luigi_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_baby_mario_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_baby_peach_64x64.tpl
+TPL,IA4,1	= ./game_image/timg/tt_block_16x16.tpl
+TPL,IA4,1	= ./game_image/timg/tt_block_4x4.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_blue_minus.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_blue_plus.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_boss_packun_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_catherine_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_chase_icon.tpl
+TPL,IA4,1	= ./game_image/timg/tt_chase_icon_light.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_clacon_body.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_coin_type1_000.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_d_number_3d_00.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_d_number_3d_01.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_d_number_3d_02.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_d_number_3d_03.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_d_number_3d_04.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_d_number_3d_05.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_d_number_3d_06.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_d_number_3d_07.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_d_number_3d_08.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_d_number_3d_09.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_daisy_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_didy_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_donky_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_fence_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_funky_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_gccon_body.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_gold_handle.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_hammer_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_hatena_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_hone_koopa_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_GoldenKinoko.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_banana.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_bomb_hei.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_box_glass_type_02.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_dummybox.tpl
+TPL,I8,1	= ./game_image/timg/tt_item_empty.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_hanachan.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_honeBall.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_kame_green.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_kame_green_3.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_kame_red.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_kame_red_3.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_kame_wing.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_killer.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_kinoko.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_kinoko_2.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_kinoko_3.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_new1.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_new2.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_new3.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_star.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_thunder.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_item_wanwan.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_karon_64x64.tpl
+TPL,IA4,1	= ./game_image/timg/tt_kinoko_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_kinopico_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_kinopio_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_koopa_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_koopa_jr_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_level_icon_handol_star2.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_luigi_64x64.tpl
+TPL,IA8,1	= ./game_image/timg/tt_map_chara_searchlight.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_blue_00.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_blue_01.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_blue_02.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_blue_03.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_blue_04.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_blue_05.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_blue_06.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_blue_07.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_blue_08.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_blue_09.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_red_00.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_red_01.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_red_02.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_red_03.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_red_04.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_red_05.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_red_06.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_red_07.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_red_08.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_red_09.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mario_battle_font_red_haifun.tpl
+TPL,IA8,1	= ./game_image/timg/tt_mg_windiw_vol3_ll.tpl
+TPL,IA8,1	= ./game_image/timg/tt_mg_windiw_vol3_lu.tpl
+TPL,IA8,1	= ./game_image/timg/tt_mg_windiw_vol3_rl.tpl
+TPL,IA8,1	= ./game_image/timg/tt_mg_windiw_vol3_ru.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mii_suit_a_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mii_suit_b_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_mii_suit_c_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_noko_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_nunchaku_new_stick.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_nunchaku_new_z.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_pata_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_pattern_chek_32x32_alpha.tpl
+TPL,IA4,1	= ./game_image/timg/tt_pattern_chek_alpha_nasi_32x32.tpl
+TPL,IA8,1	= ./game_image/timg/tt_pattern_chek_bokashi_32x32.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_peach_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_race_chara_name_line_gray_map_ver00.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_race_chara_name_line_white_ver00.tpl
+TPL,IA8,1	= ./game_image/timg/tt_race_chara_name_only_line_gray_ver02.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_red_minus.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_red_plus.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_remocon_han_body.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_remocon_nun_body.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_remokon_new_a.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_remokon_new_b.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_roseta_64x64.tpl
+TPL,RGB565,1	= ./game_image/timg/tt_start_line_22.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_start_line_32x32tga.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_teresa_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_waluigi_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_wario_64x64.tpl
+TPL,RGB5A3,1	= ./game_image/timg/tt_yoshi_64x64.tpl
+TPL,RGB5A3,1	= ./message_window/timg/tt_fukidashi_window_kado_common.tpl
+TPL,IA8,1	= ./message_window/timg/tt_glass_waku_180.tpl
+TPL,RGB565,1	= ./message_window/timg/tt_pattern_chek_32x32.tpl
+TPL,RGB5A3,1	= ./message_window/timg/tt_pattern_chek_alpha_nasi_32x32.tpl
+TPL,IA8,1	= ./message_window/timg/tt_pattern_chek_bokashi_32x32.tpl
+TPL,RGB5A3,1	= ./pad_recognize/timg/tt_a_body.tpl
+TPL,IA8,1	= ./pad_recognize/timg/tt_a_light.tpl
+TPL,RGB5A3,1	= ./pad_recognize/timg/tt_clacon_body.tpl
+TPL,IA8,1	= ./pad_recognize/timg/tt_clacon_light.tpl
+TPL,RGB5A3,1	= ./pad_recognize/timg/tt_fukidashi_window_kado_common.tpl
+TPL,RGB5A3,1	= ./pad_recognize/timg/tt_gccon_body.tpl
+TPL,IA8,1	= ./pad_recognize/timg/tt_gccon_light.tpl
+TPL,IA8,1	= ./pad_recognize/timg/tt_gccon_waku.tpl
+TPL,RGB5A3,1	= ./pad_recognize/timg/tt_hatena_body.tpl
+TPL,IA8,1	= ./pad_recognize/timg/tt_hatena_light.tpl
+TPL,RGB5A3,1	= ./pad_recognize/timg/tt_pattern_chek_alpha_nasi_32x32.tpl
+TPL,IA8,1	= ./pad_recognize/timg/tt_pattern_chek_bokashi_32x32.tpl
+TPL,RGB5A3,1	= ./pad_recognize/timg/tt_remocon_han_body.tpl
+TPL,IA8,1	= ./pad_recognize/timg/tt_remocon_han_light.tpl
+TPL,RGB5A3,1	= ./pad_recognize/timg/tt_remocon_nun_body.tpl
+TPL,IA8,1	= ./pad_recognize/timg/tt_remocon_nun_light.tpl
+TPL,I4,1	= ./result/timg/ht_squareWhite_00.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_baby_daisy_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_baby_luigi_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_baby_mario_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_baby_peach_64x64.tpl
+TPL,IA4,1	= ./result/timg/tt_block_16x16.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_boss_packun_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_catherine_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_daisy_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_didy_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_donky_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_funky_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_hammer_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_hatena_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_hone_koopa_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_karon_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_kinopico_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_kinopio_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_koopa_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_koopa_jr_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_luigi_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_mario_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_mii_suit_a_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_mii_suit_b_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_mii_suit_c_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_noko_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_pata_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_pattern_chek_32x32_alpha.tpl
+TPL,IA8,1	= ./result/timg/tt_pattern_chek_bokashi_32x32.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_peach_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_roseta_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_teresa_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_waluigi_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_wario_64x64.tpl
+TPL,RGB5A3,1	= ./result/timg/tt_yoshi_64x64.tpl
+
+#------------------------------------------------------------------------------
+
+[create]
+
+# Create (and overwrite without notice) the listed files before adding them to
+# the new archive. The source directory is searched under the same filename
+# with an appended ".d" or, if this fails, with an extension replaced by ".d".
+# If a source directory does not exist, the job is ignored silently.
+#   Example: For "my.brres" search directories "my.brres.d" or "my.d"
+# The source directory itself is set on the exclude list and will not stored
+# into the new archive. Creating can be controlled by the options:
+#   --no-recurse  : Do not create archives recursively.
+#   --no-encode   : Do not encode files before creating an archive.
+#   --encode-img  : Encode all image files (TEX,TPL,BREFT/sub), overrides --no-encode.
+#   --encode-all  : Encode all files and ignore timestamps.
+#   --pt-dir      : Set `point directory' mode.
+#   --u8          : Create an U8 archive.
+#   --brres       : Create an BRRES archive.
+#   --breff       : Create an BREFF archive.
+#   --breft       : Create an BREFT archive.
+#   --no-compress : Create an uncompressed file (U8 instead of SZS).
+#   ...
+
+./effect/RKMenu.breff
+./effect/RKMenu.breft
+
+#------------------------------------------------------------------------------
+
+[order]
+
+# This list contains all extracted files in the order of the original archive.
+# If creating archives (but not U8) this list will be used to sort the found
+# files. For archives with directory support (all but not PACK) it is very
+# important, that the directories are listed before the files that resides in
+# the directories.
+#
+# The value before the equal sign is the file offset in the original archive
+# and is ignored for sorting.
+
+		= ./
+		= ./bg/
+		= ./bg/blyt/
+    0x7060	= ./bg/blyt/obi_top_text.brlyt
+		= ./bg/ctrl/
+    0x7280	= ./bg/ctrl/MenuObiTitleText.brctr
+		= ./button/
+		= ./button/anim/
+    0x7320	= ./button/anim/common_w004_menu_fade_in.brlan
+    0x7500	= ./button/anim/common_w004_menu_fade_in_after.brlan
+    0x76e0	= ./button/anim/common_w004_menu_fade_in_before.brlan
+    0x78c0	= ./button/anim/common_w004_menu_fade_out.brlan
+    0x7aa0	= ./button/anim/common_w004_menu_free.brlan
+    0x7c80	= ./button/anim/common_w004_menu_free_to_select.brlan
+    0x7ee0	= ./button/anim/common_w004_menu_fuchi_check_loop.brlan
+    0x81a0	= ./button/anim/common_w004_menu_select.brlan
+    0x83c0	= ./button/anim/common_w004_menu_select_to_free.brlan
+    0x85c0	= ./button/anim/common_w004_menu_text_light_01_ok.brlan
+    0x8840	= ./button/anim/common_w004_menu_text_light_01_stop.brlan
+    0x8a20	= ./button/anim/common_w004_menu_text_light_02_select.brlan
+    0x8ce0	= ./button/anim/common_w004_menu_text_light_02_stop.brlan
+    0x8f60	= ./button/anim/common_w098_wifi_menu_fade_in.brlan
+    0x9480	= ./button/anim/common_w098_wifi_menu_fade_in_after.brlan
+    0x99a0	= ./button/anim/common_w098_wifi_menu_fade_in_before.brlan
+    0x9ec0	= ./button/anim/common_w098_wifi_menu_fade_out.brlan
+    0xa400	= ./button/anim/common_w098_wifi_menu_free.brlan
+    0xab20	= ./button/anim/common_w098_wifi_menu_free_to_select.brlan
+    0xb280	= ./button/anim/common_w098_wifi_menu_fuchi_check_loop.brlan
+    0xc0c0	= ./button/anim/common_w098_wifi_menu_meet.brlan
+    0xc9a0	= ./button/anim/common_w098_wifi_menu_offline.brlan
+    0xcec0	= ./button/anim/common_w098_wifi_menu_online.brlan
+    0xd2e0	= ./button/anim/common_w098_wifi_menu_room.brlan
+    0xdbc0	= ./button/anim/common_w098_wifi_menu_select.brlan
+    0xe620	= ./button/anim/common_w098_wifi_menu_select_to_free.brlan
+    0xece0	= ./button/anim/common_w098_wifi_menu_text_light_01_ok.brlan
+    0xf3a0	= ./button/anim/common_w098_wifi_menu_text_light_01_stop.brlan
+    0xf8e0	= ./button/anim/common_w098_wifi_menu_text_light_02_select.brlan
+    0xffa0	= ./button/anim/common_w098_wifi_menu_text_light_02_stop.brlan
+   0x104e0	= ./button/anim/common_w098_wifi_menu_text_meet.brlan
+   0x10e40	= ./button/anim/common_w098_wifi_menu_text_offline.brlan
+   0x11720	= ./button/anim/common_w098_wifi_menu_text_online.brlan
+   0x12000	= ./button/anim/common_w098_wifi_menu_text_room.brlan
+		= ./button/blyt/
+   0x128c0	= ./button/blyt/common_w004_menu.brlyt
+   0x13860	= ./button/blyt/common_w098_wifi_menu.brlyt
+		= ./button/ctrl/
+   0x152e0	= ./button/ctrl/AfterMenuBT.brctr
+   0x157e0	= ./button/ctrl/AfterMenuBTLast.brctr
+   0x15ae0	= ./button/ctrl/AfterMenuEndConfirm.brctr
+   0x15e40	= ./button/ctrl/AfterMenuEvent.brctr
+   0x16240	= ./button/ctrl/AfterMenuFriendGhost.brctr
+   0x165a0	= ./button/ctrl/AfterMenuGhostBattle.brctr
+   0x16a00	= ./button/ctrl/AfterMenuGhostWatch.brctr
+   0x16e00	= ./button/ctrl/AfterMenuGoFriendRoom.brctr
+   0x17160	= ./button/ctrl/AfterMenuGoRanking.brctr
+   0x174c0	= ./button/ctrl/AfterMenuGrandPrix2.brctr
+   0x179c0	= ./button/ctrl/AfterMenuGrandPrix3.brctr
+   0x17ec0	= ./button/ctrl/AfterMenuMR.brctr
+   0x18260	= ./button/ctrl/AfterMenuSendRecord.brctr
+   0x185c0	= ./button/ctrl/AfterMenuTimeAttack.brctr
+   0x18ac0	= ./button/ctrl/AfterMenuVS.brctr
+   0x18fc0	= ./button/ctrl/AfterMenuVSLast.brctr
+   0x192c0	= ./button/ctrl/AfterMenuWifi.brctr
+   0x19680	= ./button/ctrl/AfterMenuWifiFriendButton.brctr
+   0x19c20	= ./button/ctrl/ConfirmMenuExit.brctr
+   0x19f80	= ./button/ctrl/PauseMenuBattle.brctr
+   0x1a3e0	= ./button/ctrl/PauseMenuBT.brctr
+   0x1a840	= ./button/ctrl/PauseMenuBTMulti.brctr
+   0x1aca0	= ./button/ctrl/PauseMenuEvent.brctr
+   0x1b0a0	= ./button/ctrl/PauseMenuGhostBattle.brctr
+   0x1b500	= ./button/ctrl/PauseMenuGhostBattleQuit.brctr
+   0x1b840	= ./button/ctrl/PauseMenuGhostWatch.brctr
+   0x1bca0	= ./button/ctrl/PauseMenuGrandPrix.brctr
+   0x1c100	= ./button/ctrl/PauseMenuMissionRun.brctr
+   0x1c560	= ./button/ctrl/PauseMenuMR.brctr
+   0x1c960	= ./button/ctrl/PauseMenuReplayGhostBattle.brctr
+   0x1cdc0	= ./button/ctrl/PauseMenuReplayGP3.brctr
+   0x1d220	= ./button/ctrl/PauseMenuReplayGP4.brctr
+   0x1d680	= ./button/ctrl/PauseMenuReplayTA.brctr
+   0x1dae0	= ./button/ctrl/PauseMenuTimeAttack.brctr
+   0x1df40	= ./button/ctrl/PauseMenuVS.brctr
+   0x1e3a0	= ./button/ctrl/PauseMenuVSMulti.brctr
+		= ./button/timg/
+   0x1e800	= ./button/timg/fm_nikoniko_mark .tpl
+   0x20840	= ./button/timg/tt_gr_maru_normal_00.tpl
+   0x21a80	= ./button/timg/tt_pattern_chek_bokashi_32x32.tpl
+   0x222c0	= ./button/timg/tt_window_vol3sono2.tpl
+		= ./common/
+		= ./control/
+		= ./control/anim/
+   0x22400	= ./control/anim/common_w050_earth_message_fade_in.brlan
+   0x22500	= ./control/anim/common_w050_earth_message_fade_in_after.brlan
+   0x225e0	= ./control/anim/common_w050_earth_message_fade_in_before.brlan
+   0x226c0	= ./control/anim/common_w050_earth_message_fade_out.brlan
+   0x227c0	= ./control/anim/common_w050_earth_message_text_color_loop.brlan
+   0x22900	= ./control/anim/glass_dot_blue_flash_loop.brlan
+   0x22a80	= ./control/anim/glass_dot_blue_flash_stop.brlan
+   0x22ba0	= ./control/anim/glass_dot_blue_light_off.brlan
+   0x22c80	= ./control/anim/glass_dot_blue_light_on.brlan
+   0x22d80	= ./control/anim/glass_dot_red_flash_loop.brlan
+   0x22f00	= ./control/anim/glass_dot_red_flash_stop.brlan
+   0x23020	= ./control/anim/glass_dot_red_light_off.brlan
+   0x23100	= ./control/anim/glass_dot_red_light_on.brlan
+   0x23200	= ./control/anim/wifi_timer_color_anim.brlan
+   0x26ac0	= ./control/anim/wifi_timer_fadein.brlan
+   0x26b60	= ./control/anim/wifi_timer_fadein_before.brlan
+   0x26c00	= ./control/anim/wifi_timer_fadeout.brlan
+   0x26ca0	= ./control/anim/wifi_timer_fade_wait.brlan
+   0x26d40	= ./control/anim/wifi_timer_texture_pattern_0_9.brlan
+		= ./control/blyt/
+   0x27400	= ./control/blyt/common_w050_earth_message.brlyt
+   0x277c0	= ./control/blyt/glass_dot_blue.brlyt
+   0x27d00	= ./control/blyt/glass_dot_red.brlyt
+   0x28240	= ./control/blyt/live_message.brlyt
+   0x28420	= ./control/blyt/wifi_timer.brlyt
+		= ./control/ctrl/
+   0x29620	= ./control/ctrl/BattleSetPointBlue.brctr
+   0x29800	= ./control/ctrl/BattleSetPointRed.brctr
+   0x299c0	= ./control/ctrl/CountDownTimer.brctr
+   0x29c40	= ./control/ctrl/SimpleMessageWindow.brctr
+   0x29de0	= ./control/ctrl/WifiConnectNum.brctr
+		= ./control/timg/
+   0x29e80	= ./control/timg/ht_squareWhite_00.tpl
+   0x29ee0	= ./control/timg/tt_block_16x16.tpl
+   0x2a320	= ./control/timg/tt_d_number_3d_00.tpl
+   0x2c360	= ./control/timg/tt_d_number_3d_01.tpl
+   0x2e3a0	= ./control/timg/tt_d_number_3d_02.tpl
+   0x303e0	= ./control/timg/tt_d_number_3d_03.tpl
+   0x32420	= ./control/timg/tt_d_number_3d_04.tpl
+   0x34460	= ./control/timg/tt_d_number_3d_05.tpl
+   0x364a0	= ./control/timg/tt_d_number_3d_06.tpl
+   0x384e0	= ./control/timg/tt_d_number_3d_07.tpl
+   0x3a520	= ./control/timg/tt_d_number_3d_08.tpl
+   0x3c560	= ./control/timg/tt_d_number_3d_09.tpl
+   0x3e5a0	= ./control/timg/tt_d_number_3d_coron.tpl
+   0x405e0	= ./control/timg/tt_glass_sphere.tpl
+   0x412a0	= ./control/timg/tt_mario_64x64.tpl
+   0x432e0	= ./control/timg/tt_pattern_chek_32x32_alpha.tpl
+   0x43b20	= ./control/timg/tt_pattern_chek_bokashi_32x32.tpl
+   0x44360	= ./control/timg/tt_star_01.tpl
+		= ./demo/
+		= ./demo/blyt/
+   0x44ba0	= ./demo/blyt/course_name.brlyt
+   0x44e80	= ./demo/blyt/cup_icon_64x64_common.brlyt
+   0x45c60	= ./demo/blyt/cup_name.brlyt
+   0x45fa0	= ./demo/blyt/cup_name_congratulations_screen.brlyt
+		= ./demo/ctrl/
+   0x462e0	= ./demo/ctrl/course_name.brctr
+   0x46360	= ./demo/ctrl/cup_name.brctr
+   0x46400	= ./demo/ctrl/WifiAwardType.brctr
+		= ./demo/timg/
+   0x464c0	= ./demo/timg/st_battle_icon_balloon.tpl
+   0x4e500	= ./demo/timg/st_battle_icon_coin.tpl
+   0x56540	= ./demo/timg/st_battle_icon_flag.tpl
+   0x5e580	= ./demo/timg/tt_cup_icon_banana_00.tpl
+   0x665c0	= ./demo/timg/tt_cup_icon_flower_00.tpl
+   0x6e600	= ./demo/timg/tt_cup_icon_kinoko_00.tpl
+   0x76640	= ./demo/timg/tt_cup_icon_konoha_00.tpl
+   0x7e680	= ./demo/timg/tt_cup_icon_koura_00.tpl
+   0x866c0	= ./demo/timg/tt_cup_icon_mirror_00.tpl
+   0x8e700	= ./demo/timg/tt_cup_icon_oukan_00.tpl
+   0x96740	= ./demo/timg/tt_cup_icon_star_00.tpl
+   0x9e780	= ./demo/timg/tt_cup_icon_thunder_00.tpl
+   0xa67c0	= ./demo/timg/tt_hatena_64x64.tpl
+		= ./dpd_pointer/
+		= ./dpd_pointer/anim/
+   0xa8800	= ./dpd_pointer/anim/pointing_cursor_blue_cursor.brlan
+   0xa90e0	= ./dpd_pointer/anim/pointing_cursor_common_cursor.brlan
+   0xa99c0	= ./dpd_pointer/anim/pointing_cursor_c_left.brlan
+   0xa9a80	= ./dpd_pointer/anim/pointing_cursor_c_right.brlan
+   0xa9b40	= ./dpd_pointer/anim/pointing_cursor_green_cursor.brlan
+   0xaa420	= ./dpd_pointer/anim/pointing_cursor_left.brlan
+   0xaa4e0	= ./dpd_pointer/anim/pointing_cursor_pointing_cursor_loop.brlan
+   0xaa5a0	= ./dpd_pointer/anim/pointing_cursor_race_blue_cursor.brlan
+   0xaa740	= ./dpd_pointer/anim/pointing_cursor_race_common_cursor.brlan
+   0xaa8e0	= ./dpd_pointer/anim/pointing_cursor_race_c_left.brlan
+   0xaa9a0	= ./dpd_pointer/anim/pointing_cursor_race_c_right.brlan
+   0xaaa60	= ./dpd_pointer/anim/pointing_cursor_race_green_cursor.brlan
+   0xaac00	= ./dpd_pointer/anim/pointing_cursor_race_left.brlan
+   0xaacc0	= ./dpd_pointer/anim/pointing_cursor_race_pointing_cursor_loop.brlan
+   0xaad80	= ./dpd_pointer/anim/pointing_cursor_race_red_cursor.brlan
+   0xaaf20	= ./dpd_pointer/anim/pointing_cursor_race_right.brlan
+   0xaafe0	= ./dpd_pointer/anim/pointing_cursor_race_yellow_cursor.brlan
+   0xab180	= ./dpd_pointer/anim/pointing_cursor_red_cursor.brlan
+   0xaba60	= ./dpd_pointer/anim/pointing_cursor_right.brlan
+   0xabb20	= ./dpd_pointer/anim/pointing_cursor_yellow_cursor.brlan
+		= ./dpd_pointer/blyt/
+   0xac400	= ./dpd_pointer/blyt/pointing_cursor.brlyt
+   0xadda0	= ./dpd_pointer/blyt/pointing_cursor_race.brlyt
+		= ./dpd_pointer/ctrl/
+   0xae5c0	= ./dpd_pointer/ctrl/DpdPointer.brctr
+   0xae940	= ./dpd_pointer/ctrl/DpdPointerRace.brctr
+		= ./dpd_pointer/timg/
+   0xaece0	= ./dpd_pointer/timg/cursor0.tpl
+   0xb0620	= ./dpd_pointer/timg/tt_i_cursor_nakami_ver0.tpl
+   0xb0960	= ./dpd_pointer/timg/tt_i_cursor_shikaku.tpl
+   0xb09e0	= ./dpd_pointer/timg/tt_i_cursor_tongari.tpl
+		= ./effect/
+   0xb3c20	= ./effect/RKMenu.breff
+   0xb3ec0	= ./effect/RKMenu.breft
+		= ./game_image/
+		= ./game_image/anim/
+   0xb4f60	= ./game_image/anim/battle_point_set_position_point_off.brlan
+   0xb5060	= ./game_image/anim/battle_point_set_position_point_on.brlan
+   0xb5240	= ./game_image/anim/battle_point_set_position_result_point_off.brlan
+   0xb5320	= ./game_image/anim/battle_point_set_position_result_point_on.brlan
+   0xb54c0	= ./game_image/anim/battle_point_set_position_result_point_stop.brlan
+   0xb55a0	= ./game_image/anim/battle_team_score_red_vs_blue_off.brlan
+   0xb5fe0	= ./game_image/anim/battle_team_score_red_vs_blue_on.brlan
+   0xb69e0	= ./game_image/anim/battle_team_score_red_vs_blue_stop.brlan
+   0xb7260	= ./game_image/anim/battle_team_score_red_vs_blue_texture_pattern_0.brlan
+   0xb78c0	= ./game_image/anim/battle_team_score_red_vs_blue_vitory.brlan
+   0xb8340	= ./game_image/anim/chara_name_alpha_0.brlan
+   0xb8400	= ./game_image/anim/chara_name_alpha_255.brlan
+   0xb84c0	= ./game_image/anim/chara_name_fade_in_out.brlan
+   0xb8580	= ./game_image/anim/chara_name_only_alpha_0.brlan
+   0xb8640	= ./game_image/anim/chara_name_only_alpha_255.brlan
+   0xb8700	= ./game_image/anim/chara_name_only_fade_in_out.brlan
+   0xb87c0	= ./game_image/anim/chara_name_only_text_color_blue.brlan
+   0xb88a0	= ./game_image/anim/chara_name_only_text_color_red.brlan
+   0xb8980	= ./game_image/anim/chara_name_only_text_color_white.brlan
+   0xb8a60	= ./game_image/anim/chara_name_text_color_blue.brlan
+   0xb8b40	= ./game_image/anim/chara_name_text_color_red.brlan
+   0xb8c20	= ./game_image/anim/chara_name_text_color_white.brlan
+   0xb8d00	= ./game_image/anim/chase_icon_item_zoom.brlan
+   0xb8e40	= ./game_image/anim/chase_icon_light_roop.brlan
+   0xb8f80	= ./game_image/anim/chase_icon_off.brlan
+   0xb9020	= ./game_image/anim/chase_icon_off_to_on.brlan
+   0xb90c0	= ./game_image/anim/chase_icon_on.brlan
+   0xb9160	= ./game_image/anim/common_w039_map_chara_icon_black.brlan
+   0xb9360	= ./game_image/anim/common_w039_map_chara_icon_blue.brlan
+   0xb9560	= ./game_image/anim/common_w039_map_chara_icon_default.brlan
+   0xb9600	= ./game_image/anim/common_w039_map_chara_icon_red.brlan
+   0xb9800	= ./game_image/anim/common_w039_map_chara_icon_rotate.brlan
+   0xb98a0	= ./game_image/anim/congratulations_fade_in.brlan
+   0xb9be0	= ./game_image/anim/congratulations_fade_in_before.brlan
+   0xb9e60	= ./game_image/anim/congratulations_fade_out.brlan
+   0xba160	= ./game_image/anim/congratulations_wait.brlan
+   0xba400	= ./game_image/anim/digital_font_number_bad_score.brlan
+   0xba620	= ./game_image/anim/digital_font_number_good_score.brlan
+   0xba800	= ./game_image/anim/digital_font_number_invisible.brlan
+   0xba9a0	= ./game_image/anim/go_fade_in.brlan
+   0xbaf40	= ./game_image/anim/go_fade_in_before.brlan
+   0xbafe0	= ./game_image/anim/new_record_fade_in.brlan
+   0xbb460	= ./game_image/anim/new_record_fade_in_before.brlan
+   0xbb500	= ./game_image/anim/tt_go_multi_fade_in.brlan
+   0xbbaa0	= ./game_image/anim/tt_go_multi_fade_in_before.brlan
+   0xbbb40	= ./game_image/anim/wipe_Normal.brlan
+   0xbbc40	= ./game_image/anim/wipe_Nothig.brlan
+		= ./game_image/blyt/
+   0xbbd20	= ./game_image/blyt/battle_point_plus_minus_common.brlyt
+   0xbc1c0	= ./game_image/blyt/battle_point_set_position.brlyt
+   0xbc3a0	= ./game_image/blyt/battle_point_set_position_result.brlyt
+   0xbc580	= ./game_image/blyt/battle_team_score_red_vs_blue.brlyt
+   0xbcf60	= ./game_image/blyt/character_64x64_common.brlyt
+   0xbeec0	= ./game_image/blyt/character_map_icon_common.brlyt
+   0xc1600	= ./game_image/blyt/chara_name.brlyt
+   0xc1b40	= ./game_image/blyt/chara_name_only.brlyt
+   0xc20e0	= ./game_image/blyt/chase_icon.brlyt
+   0xc2580	= ./game_image/blyt/coin.brlyt
+   0xc2780	= ./game_image/blyt/common_w039_map_chara_icon.brlyt
+   0xc36a0	= ./game_image/blyt/common_w039_map_obj_icon.brlyt
+   0xc3940	= ./game_image/blyt/common_w040_map_set_position.brlyt
+   0xc3c00	= ./game_image/blyt/common_w074_loading_back.brlyt
+   0xc3dc0	= ./game_image/blyt/congratulations.brlyt
+   0xc4120	= ./game_image/blyt/controller_info_cla_con.brlyt
+   0xc51c0	= ./game_image/blyt/controller_info_gc_con.brlyt
+   0xc6260	= ./game_image/blyt/controller_info_handle.brlyt
+   0xc7300	= ./game_image/blyt/controller_info_nunchaku.brlyt
+   0xc83a0	= ./game_image/blyt/digital_font_number.brlyt
+   0xc85a0	= ./game_image/blyt/go.brlyt
+   0xc89a0	= ./game_image/blyt/item.brlyt
+   0xca500	= ./game_image/blyt/item_window.brlyt
+   0xcaae0	= ./game_image/blyt/live.brlyt
+   0xcace0	= ./game_image/blyt/live_message.brlyt
+   0xcaec0	= ./game_image/blyt/new_record.brlyt
+   0xcb200	= ./game_image/blyt/partition_line.brlyt
+   0xcb4a0	= ./game_image/blyt/race_message_half.brlyt
+   0xcbcc0	= ./game_image/blyt/start_line.brlyt
+   0xcbe80	= ./game_image/blyt/tt_go_multi.brlyt
+   0xcc280	= ./game_image/blyt/wipe.brlyt
+		= ./game_image/ctrl/
+   0xcc4a0	= ./game_image/ctrl/balloon.brctr
+   0xcc960	= ./game_image/ctrl/balloon_cpu.brctr
+   0xcce20	= ./game_image/ctrl/BattleAddPoint.brctr
+   0xcd380	= ./game_image/ctrl/BattleResultAddPoint.brctr
+   0xcd7c0	= ./game_image/ctrl/BattleWin.brctr
+   0xcd8c0	= ./game_image/ctrl/battle_total_point.brctr
+   0xcdce0	= ./game_image/ctrl/chase_icon.brctr
+   0xcdf20	= ./game_image/ctrl/count.brctr
+   0xce300	= ./game_image/ctrl/count_4.brctr
+   0xce700	= ./game_image/ctrl/GhostMessage.brctr
+   0xce7a0	= ./game_image/ctrl/HideBack.brctr
+   0xce840	= ./game_image/ctrl/item_window_new.brctr
+   0xceb20	= ./game_image/ctrl/lap_number.brctr
+   0xcee20	= ./game_image/ctrl/Live.brctr
+   0xceec0	= ./game_image/ctrl/LiveMessage.brctr
+   0xcef60	= ./game_image/ctrl/map.brctr
+   0xcf080	= ./game_image/ctrl/map_chara.brctr
+   0xcf260	= ./game_image/ctrl/map_obj.brctr
+   0xcf320	= ./game_image/ctrl/map_start_line.brctr
+   0xcf3a0	= ./game_image/ctrl/newrecord.brctr
+   0xcf4a0	= ./game_image/ctrl/PadInfoClassic.brctr
+   0xcf540	= ./game_image/ctrl/PadInfoCore.brctr
+   0xcf5e0	= ./game_image/ctrl/PadInfoDolphin.brctr
+   0xcf680	= ./game_image/ctrl/PadInfoFreeStyle.brctr
+   0xcf720	= ./game_image/ctrl/partition_line.brctr
+   0xcf7a0	= ./game_image/ctrl/point.brctr
+   0xcfa00	= ./game_image/ctrl/position.brctr
+   0xcfe60	= ./game_image/ctrl/position_multi.brctr
+   0xd0220	= ./game_image/ctrl/RaceMessageWindow.brctr
+   0xd02c0	= ./game_image/ctrl/score.brctr
+   0xd0340	= ./game_image/ctrl/TextTime.brctr
+   0xd04a0	= ./game_image/ctrl/time_number.brctr
+   0xd0a60	= ./game_image/ctrl/WifiAwardCongratulations.brctr
+   0xd0be0	= ./game_image/ctrl/WifiMessage.brctr
+   0xd0e20	= ./game_image/ctrl/Wipe.brctr
+		= ./game_image/timg/
+   0xd10a0	= ./game_image/timg/fm_cla_con_a.tpl
+   0xd1d60	= ./game_image/timg/fm_cla_con_new_l.tpl
+   0xd2a20	= ./game_image/timg/fm_cla_con_new_r.tpl
+   0xd36e0	= ./game_image/timg/fm_con_sen000.tpl
+   0xd3880	= ./game_image/timg/fm_gc_con_new_a.tpl
+   0xd4540	= ./game_image/timg/fm_gc_con_new_l.tpl
+   0xd5200	= ./game_image/timg/fm_gc_con_new_r.tpl
+   0xd5ec0	= ./game_image/timg/fm_gc_con_new_stick.tpl
+   0xd6b80	= ./game_image/timg/fm_handle_0.tpl
+   0xd7840	= ./game_image/timg/fm_handle_juji.tpl
+   0xd7ec0	= ./game_image/timg/fm_handle_new_1.tpl
+   0xd8b80	= ./game_image/timg/fm_handle_new_2.tpl
+   0xd9840	= ./game_image/timg/fm_handle_new_x.tpl
+   0xda500	= ./game_image/timg/fm_item_gesso.tpl
+   0xdc540	= ./game_image/timg/fm_item_kinoko_l.tpl
+   0xde580	= ./game_image/timg/fm_item_pikakumo.tpl
+   0xe05c0	= ./game_image/timg/fm_item_pow.tpl
+   0xe2600	= ./game_image/timg/ht_squareWhite_00.tpl
+   0xe2660	= ./game_image/timg/ij_wipe_a.tpl
+   0xe2aa0	= ./game_image/timg/item_banana_3.tpl
+   0xe4ae0	= ./game_image/timg/st_aka1_32x32.tpl
+   0xe5320	= ./game_image/timg/st_aka2_32x32.tpl
+   0xe5b60	= ./game_image/timg/st_ao1_32x32.tpl
+   0xe63a0	= ./game_image/timg/st_ao2_32x32.tpl
+   0xe6be0	= ./game_image/timg/st_baby_daisy_32x32.tpl
+   0xe7420	= ./game_image/timg/st_baby_luigi_32x32.tpl
+   0xe7c60	= ./game_image/timg/st_baby_mario_32x32.tpl
+   0xe84a0	= ./game_image/timg/st_baby_peach_32x32.tpl
+   0xe8ce0	= ./game_image/timg/st_begoman_32x32.tpl
+   0xe9520	= ./game_image/timg/st_catherine_32x32.tpl
+   0xe9d60	= ./game_image/timg/st_daisy_32x32.tpl
+   0xea5a0	= ./game_image/timg/st_didy_32x32.tpl
+   0xeade0	= ./game_image/timg/st_donky_32x32.tpl
+   0xeb620	= ./game_image/timg/st_dossun_32x32.tpl
+   0xebe60	= ./game_image/timg/st_fuky_32x32.tpl
+   0xec6a0	= ./game_image/timg/st_hanachan_32x32.tpl
+   0xecee0	= ./game_image/timg/st_hone_koopa_32x32.tpl
+   0xed720	= ./game_image/timg/st_karon_32x32.tpl
+   0xedf60	= ./game_image/timg/st_kinopico_32x32.tpl
+   0xee7a0	= ./game_image/timg/st_kinopio_32x32.tpl
+   0xeefe0	= ./game_image/timg/st_kojin1_32x32.tpl
+   0xef820	= ./game_image/timg/st_kojin2_32x32.tpl
+   0xf0060	= ./game_image/timg/st_koopa_32x32.tpl
+   0xf08a0	= ./game_image/timg/st_koopa_jr_32x32.tpl
+   0xf10e0	= ./game_image/timg/st_luigi_32x32.tpl
+   0xf1920	= ./game_image/timg/st_mario_32x32.tpl
+   0xf2160	= ./game_image/timg/st_noko_32x32.tpl
+   0xf29a0	= ./game_image/timg/st_peach_32x32.tpl
+   0xf31e0	= ./game_image/timg/st_roseta_32x32.tpl
+   0xf3a20	= ./game_image/timg/st_sambo_body_32x32.tpl
+   0xf4260	= ./game_image/timg/st_sambo_head_32x32.tpl
+   0xf4aa0	= ./game_image/timg/st_teresa_32x32.tpl
+   0xf52e0	= ./game_image/timg/st_waluigi_32x32.tpl
+   0xf5b20	= ./game_image/timg/st_wanwan_32x32.tpl
+   0xf6360	= ./game_image/timg/st_wario_32x32.tpl
+   0xf6ba0	= ./game_image/timg/st_yoshi_32x32.tpl
+   0xf73e0	= ./game_image/timg/tt_baby_daisy_64x64.tpl
+   0xf9420	= ./game_image/timg/tt_baby_luigi_64x64.tpl
+   0xfb460	= ./game_image/timg/tt_baby_mario_64x64.tpl
+   0xfd4a0	= ./game_image/timg/tt_baby_peach_64x64.tpl
+   0xff4e0	= ./game_image/timg/tt_block_16x16.tpl
+   0xff920	= ./game_image/timg/tt_block_4x4.tpl
+   0xff980	= ./game_image/timg/tt_blue_minus.tpl
+  0x101f40	= ./game_image/timg/tt_blue_plus.tpl
+  0x104500	= ./game_image/timg/tt_boss_packun_64x64.tpl
+  0x106540	= ./game_image/timg/tt_catherine_64x64.tpl
+  0x108580	= ./game_image/timg/tt_chase_icon.tpl
+  0x1105c0	= ./game_image/timg/tt_chase_icon_light.tpl
+  0x114600	= ./game_image/timg/tt_clacon_body.tpl
+  0x134640	= ./game_image/timg/tt_coin_type1_000.tpl
+  0x134ae0	= ./game_image/timg/tt_daisy_64x64.tpl
+  0x136b20	= ./game_image/timg/tt_didy_64x64.tpl
+  0x138b60	= ./game_image/timg/tt_donky_64x64.tpl
+  0x13aba0	= ./game_image/timg/tt_d_number_3d_00.tpl
+  0x13cbe0	= ./game_image/timg/tt_d_number_3d_01.tpl
+  0x13ec20	= ./game_image/timg/tt_d_number_3d_02.tpl
+  0x140c60	= ./game_image/timg/tt_d_number_3d_03.tpl
+  0x142ca0	= ./game_image/timg/tt_d_number_3d_04.tpl
+  0x144ce0	= ./game_image/timg/tt_d_number_3d_05.tpl
+  0x146d20	= ./game_image/timg/tt_d_number_3d_06.tpl
+  0x148d60	= ./game_image/timg/tt_d_number_3d_07.tpl
+  0x14ada0	= ./game_image/timg/tt_d_number_3d_08.tpl
+  0x14cde0	= ./game_image/timg/tt_d_number_3d_09.tpl
+  0x14ee20	= ./game_image/timg/tt_fence_32x32.tpl
+  0x14f660	= ./game_image/timg/tt_funky_64x64.tpl
+  0x1516a0	= ./game_image/timg/tt_gccon_body.tpl
+  0x1716e0	= ./game_image/timg/tt_gold_handle.tpl
+  0x172640	= ./game_image/timg/tt_hammer_64x64.tpl
+  0x174680	= ./game_image/timg/tt_hatena_64x64.tpl
+  0x1766c0	= ./game_image/timg/tt_hone_koopa_64x64.tpl
+  0x178700	= ./game_image/timg/tt_item_banana.tpl
+  0x17a740	= ./game_image/timg/tt_item_bomb_hei.tpl
+  0x17c780	= ./game_image/timg/tt_item_box_glass_type_02.tpl
+  0x182fc0	= ./game_image/timg/tt_item_dummybox.tpl
+  0x185000	= ./game_image/timg/tt_item_empty.tpl
+  0x185080	= ./game_image/timg/tt_item_GoldenKinoko.tpl
+  0x1870c0	= ./game_image/timg/tt_item_hanachan.tpl
+  0x189100	= ./game_image/timg/tt_item_honeBall.tpl
+  0x18b140	= ./game_image/timg/tt_item_kame_green.tpl
+  0x18d180	= ./game_image/timg/tt_item_kame_green_3.tpl
+  0x18f1c0	= ./game_image/timg/tt_item_kame_red.tpl
+  0x191200	= ./game_image/timg/tt_item_kame_red_3.tpl
+  0x193240	= ./game_image/timg/tt_item_kame_wing.tpl
+  0x195280	= ./game_image/timg/tt_item_killer.tpl
+  0x1972c0	= ./game_image/timg/tt_item_kinoko.tpl
+  0x199300	= ./game_image/timg/tt_item_kinoko_2.tpl
+  0x19b340	= ./game_image/timg/tt_item_kinoko_3.tpl
+  0x19d380	= ./game_image/timg/tt_item_new1.tpl
+  0x19f3c0	= ./game_image/timg/tt_item_new2.tpl
+  0x1a1400	= ./game_image/timg/tt_item_new3.tpl
+  0x1a3440	= ./game_image/timg/tt_item_star.tpl
+  0x1a5480	= ./game_image/timg/tt_item_thunder.tpl
+  0x1a74c0	= ./game_image/timg/tt_item_wanwan.tpl
+  0x1a9500	= ./game_image/timg/tt_karon_64x64.tpl
+  0x1ab540	= ./game_image/timg/tt_kinoko_32x32.tpl
+  0x1ab980	= ./game_image/timg/tt_kinopico_64x64.tpl
+  0x1ad9c0	= ./game_image/timg/tt_kinopio_64x64.tpl
+  0x1afa00	= ./game_image/timg/tt_koopa_64x64.tpl
+  0x1b1a40	= ./game_image/timg/tt_koopa_jr_64x64.tpl
+  0x1b3a80	= ./game_image/timg/tt_level_icon_handol_star2.tpl
+  0x1b4ca0	= ./game_image/timg/tt_luigi_64x64.tpl
+  0x1b6ce0	= ./game_image/timg/tt_map_chara_searchlight.tpl
+  0x1b8b20	= ./game_image/timg/tt_mario_64x64.tpl
+  0x1bab60	= ./game_image/timg/tt_mario_battle_font_blue_00.tpl
+  0x1c06c0	= ./game_image/timg/tt_mario_battle_font_blue_01.tpl
+  0x1c6220	= ./game_image/timg/tt_mario_battle_font_blue_02.tpl
+  0x1cbd80	= ./game_image/timg/tt_mario_battle_font_blue_03.tpl
+  0x1d18e0	= ./game_image/timg/tt_mario_battle_font_blue_04.tpl
+  0x1d7440	= ./game_image/timg/tt_mario_battle_font_blue_05.tpl
+  0x1dcfa0	= ./game_image/timg/tt_mario_battle_font_blue_06.tpl
+  0x1e2b00	= ./game_image/timg/tt_mario_battle_font_blue_07.tpl
+  0x1e8660	= ./game_image/timg/tt_mario_battle_font_blue_08.tpl
+  0x1ee1c0	= ./game_image/timg/tt_mario_battle_font_blue_09.tpl
+  0x1f3d20	= ./game_image/timg/tt_mario_battle_font_red_00.tpl
+  0x1f9880	= ./game_image/timg/tt_mario_battle_font_red_01.tpl
+  0x1ff3e0	= ./game_image/timg/tt_mario_battle_font_red_02.tpl
+  0x204f40	= ./game_image/timg/tt_mario_battle_font_red_03.tpl
+  0x20aaa0	= ./game_image/timg/tt_mario_battle_font_red_04.tpl
+  0x210600	= ./game_image/timg/tt_mario_battle_font_red_05.tpl
+  0x216160	= ./game_image/timg/tt_mario_battle_font_red_06.tpl
+  0x21bcc0	= ./game_image/timg/tt_mario_battle_font_red_07.tpl
+  0x221820	= ./game_image/timg/tt_mario_battle_font_red_08.tpl
+  0x227380	= ./game_image/timg/tt_mario_battle_font_red_09.tpl
+  0x22cee0	= ./game_image/timg/tt_mario_battle_font_red_haifun.tpl
+  0x232a40	= ./game_image/timg/tt_mg_windiw_vol3_ll.tpl
+  0x233700	= ./game_image/timg/tt_mg_windiw_vol3_lu.tpl
+  0x2343c0	= ./game_image/timg/tt_mg_windiw_vol3_rl.tpl
+  0x235080	= ./game_image/timg/tt_mg_windiw_vol3_ru.tpl
+  0x235d40	= ./game_image/timg/tt_mii_suit_a_64x64.tpl
+  0x237d80	= ./game_image/timg/tt_mii_suit_b_64x64.tpl
+  0x239dc0	= ./game_image/timg/tt_mii_suit_c_64x64.tpl
+  0x23be00	= ./game_image/timg/tt_noko_64x64.tpl
+  0x23de40	= ./game_image/timg/tt_nunchaku_new_stick.tpl
+  0x23eda0	= ./game_image/timg/tt_nunchaku_new_z.tpl
+  0x23fa40	= ./game_image/timg/tt_pata_64x64.tpl
+  0x241a80	= ./game_image/timg/tt_pattern_chek_32x32_alpha.tpl
+  0x2422c0	= ./game_image/timg/tt_pattern_chek_alpha_nasi_32x32.tpl
+  0x242700	= ./game_image/timg/tt_pattern_chek_bokashi_32x32.tpl
+  0x242f40	= ./game_image/timg/tt_peach_64x64.tpl
+  0x244f80	= ./game_image/timg/tt_race_chara_name_line_gray_map_ver00.tpl
+  0x247540	= ./game_image/timg/tt_race_chara_name_line_white_ver00.tpl
+  0x2496c0	= ./game_image/timg/tt_race_chara_name_only_line_gray_ver02.tpl
+  0x24b840	= ./game_image/timg/tt_red_minus.tpl
+  0x24de00	= ./game_image/timg/tt_red_plus.tpl
+  0x2503c0	= ./game_image/timg/tt_remocon_han_body.tpl
+  0x270400	= ./game_image/timg/tt_remocon_nun_body.tpl
+  0x290440	= ./game_image/timg/tt_remokon_new_a.tpl
+  0x291100	= ./game_image/timg/tt_remokon_new_b.tpl
+  0x291d40	= ./game_image/timg/tt_roseta_64x64.tpl
+  0x293d80	= ./game_image/timg/tt_start_line_22.tpl
+  0x293e80	= ./game_image/timg/tt_start_line_32x32tga.tpl
+  0x2946c0	= ./game_image/timg/tt_teresa_64x64.tpl
+  0x296700	= ./game_image/timg/tt_waluigi_64x64.tpl
+  0x298740	= ./game_image/timg/tt_wario_64x64.tpl
+  0x29a780	= ./game_image/timg/tt_yoshi_64x64.tpl
+		= ./message_window/
+		= ./message_window/anim/
+  0x29c7c0	= ./message_window/anim/common_w004_menu_fade_in.brlan
+  0x29c9a0	= ./message_window/anim/common_w004_menu_fade_in_after.brlan
+  0x29cb80	= ./message_window/anim/common_w004_menu_fade_in_before.brlan
+  0x29cd60	= ./message_window/anim/common_w004_menu_fade_out.brlan
+  0x29cf40	= ./message_window/anim/common_w004_menu_free.brlan
+  0x29d120	= ./message_window/anim/common_w004_menu_free_to_select.brlan
+  0x29d380	= ./message_window/anim/common_w004_menu_fuchi_check_loop.brlan
+  0x29d640	= ./message_window/anim/common_w004_menu_select.brlan
+  0x29d860	= ./message_window/anim/common_w004_menu_select_to_free.brlan
+  0x29da60	= ./message_window/anim/common_w004_menu_text_light_01_ok.brlan
+  0x29dce0	= ./message_window/anim/common_w004_menu_text_light_01_stop.brlan
+  0x29dec0	= ./message_window/anim/common_w004_menu_text_light_02_select.brlan
+  0x29e180	= ./message_window/anim/common_w004_menu_text_light_02_stop.brlan
+  0x29e400	= ./message_window/anim/common_w008_back_fade_in.brlan
+  0x29e6c0	= ./message_window/anim/common_w008_back_fade_in_after.brlan
+  0x29e960	= ./message_window/anim/common_w008_back_fade_in_before.brlan
+  0x29ec00	= ./message_window/anim/common_w008_back_fade_out.brlan
+  0x29eec0	= ./message_window/anim/common_w008_back_free.brlan
+  0x29f440	= ./message_window/anim/common_w008_back_free_to_select.brlan
+  0x29f940	= ./message_window/anim/common_w008_back_fuchi_check_loop.brlan
+  0x29fc80	= ./message_window/anim/common_w008_back_select.brlan
+  0x2a0100	= ./message_window/anim/common_w008_back_select_to_free.brlan
+  0x2a0580	= ./message_window/anim/common_w008_back_text_light_01_ok.brlan
+  0x2a08c0	= ./message_window/anim/common_w008_back_text_light_01_stop.brlan
+  0x2a0b80	= ./message_window/anim/common_w008_back_text_light_02_select.brlan
+  0x2a0ec0	= ./message_window/anim/common_w008_back_text_light_02_stop.brlan
+  0x2a1180	= ./message_window/anim/common_w073_loading_loading.brlan
+		= ./message_window/blyt/
+  0x2a1500	= ./message_window/blyt/a_button_for_message_window.brlyt
+  0x2a16a0	= ./message_window/blyt/black_down.brlyt
+  0x2a1900	= ./message_window/blyt/black_down_race.brlyt
+  0x2a1b60	= ./message_window/blyt/common_w004_menu.brlyt
+  0x2a2b00	= ./message_window/blyt/common_w008_back.brlyt
+  0x2a3480	= ./message_window/blyt/common_w017_message.brlyt
+  0x2a3ac0	= ./message_window/blyt/common_w022_message_half.brlyt
+  0x2a4060	= ./message_window/blyt/common_w073_loading.brlyt
+  0x2a4960	= ./message_window/blyt/common_w079_message_quarter.brlyt
+  0x2a4ee0	= ./message_window/blyt/common_w127_yes_no_message_window.brlyt
+  0x2a56e0	= ./message_window/blyt/yes_no_window_popup_container.brlyt
+		= ./message_window/ctrl/
+  0x2a5860	= ./message_window/ctrl/Back.brctr
+  0x2a5bc0	= ./message_window/ctrl/BlackBack.brctr
+  0x2a5ca0	= ./message_window/ctrl/BusySymbol.brctr
+  0x2a5d80	= ./message_window/ctrl/ConfirmOK.brctr
+  0x2a60c0	= ./message_window/ctrl/MessageWindow.brctr
+  0x2a6200	= ./message_window/ctrl/MessageWindowFrame.brctr
+  0x2a62c0	= ./message_window/ctrl/MessageWindowHalf.brctr
+  0x2a6460	= ./message_window/ctrl/MessageWindowQuarter.brctr
+  0x2a6600	= ./message_window/ctrl/OKKey.brctr
+  0x2a66e0	= ./message_window/ctrl/RaceBusySymbol.brctr
+  0x2a67c0	= ./message_window/ctrl/RaceConfirmBack.brctr
+  0x2a68a0	= ./message_window/ctrl/WifiRaceAfterMessageWindow.brctr
+  0x2a6940	= ./message_window/ctrl/YesNoButton.brctr
+  0x2a6d00	= ./message_window/ctrl/YesNoPopupContainer.brctr
+		= ./message_window/timg/
+  0x2a6da0	= ./message_window/timg/tt_fukidashi_window_kado_common.tpl
+  0x2a7a60	= ./message_window/timg/tt_glass_waku_180.tpl
+  0x2ae8a0	= ./message_window/timg/tt_pattern_chek_32x32.tpl
+  0x2af0e0	= ./message_window/timg/tt_pattern_chek_alpha_nasi_32x32.tpl
+  0x2af920	= ./message_window/timg/tt_pattern_chek_bokashi_32x32.tpl
+		= ./pad_recognize/
+		= ./pad_recognize/anim/
+  0x2b0160	= ./pad_recognize/anim/common_w055_message_connect_blue.brlan
+  0x2b03c0	= ./pad_recognize/anim/common_w055_message_connect_borderline_loop.brlan
+  0x2b0460	= ./pad_recognize/anim/common_w055_message_connect_cla_con.brlan
+  0x2b0680	= ./pad_recognize/anim/common_w055_message_connect_connect.brlan
+  0x2b08e0	= ./pad_recognize/anim/common_w055_message_connect_disconnect.brlan
+  0x2b0b40	= ./pad_recognize/anim/common_w055_message_connect_entry_light.brlan
+  0x2b0c40	= ./pad_recognize/anim/common_w055_message_connect_entry_light_stop.brlan
+  0x2b0d20	= ./pad_recognize/anim/common_w055_message_connect_gc_con.brlan
+  0x2b0f20	= ./pad_recognize/anim/common_w055_message_connect_green.brlan
+  0x2b1180	= ./pad_recognize/anim/common_w055_message_connect_han_con.brlan
+  0x2b13a0	= ./pad_recognize/anim/common_w055_message_connect_hatena.brlan
+  0x2b1560	= ./pad_recognize/anim/common_w055_message_connect_nun_con.brlan
+  0x2b1760	= ./pad_recognize/anim/common_w055_message_connect_red.brlan
+  0x2b19c0	= ./pad_recognize/anim/common_w055_message_connect_white.brlan
+  0x2b1c20	= ./pad_recognize/anim/common_w055_message_connect_yellow.brlan
+		= ./pad_recognize/blyt/
+  0x2b1e80	= ./pad_recognize/blyt/common_w055_message_connect.brlyt
+  0x2b27e0	= ./pad_recognize/blyt/common_w056_message_connect_window.brlyt
+		= ./pad_recognize/ctrl/
+  0x2b2de0	= ./pad_recognize/ctrl/RecognizePad.brctr
+  0x2b3260	= ./pad_recognize/ctrl/RecognizePadWindow.brctr
+		= ./pad_recognize/timg/
+  0x2b3320	= ./pad_recognize/timg/tt_a_body.tpl
+  0x2d3360	= ./pad_recognize/timg/tt_a_light.tpl
+  0x2f33a0	= ./pad_recognize/timg/tt_clacon_body.tpl
+  0x3133e0	= ./pad_recognize/timg/tt_clacon_light.tpl
+  0x333420	= ./pad_recognize/timg/tt_fukidashi_window_kado_common.tpl
+  0x3340e0	= ./pad_recognize/timg/tt_gccon_body.tpl
+  0x354120	= ./pad_recognize/timg/tt_gccon_light.tpl
+  0x374160	= ./pad_recognize/timg/tt_gccon_waku.tpl
+  0x3941a0	= ./pad_recognize/timg/tt_hatena_body.tpl
+  0x3b41e0	= ./pad_recognize/timg/tt_hatena_light.tpl
+  0x3d4220	= ./pad_recognize/timg/tt_pattern_chek_alpha_nasi_32x32.tpl
+  0x3d4a60	= ./pad_recognize/timg/tt_pattern_chek_bokashi_32x32.tpl
+  0x3d52a0	= ./pad_recognize/timg/tt_remocon_han_body.tpl
+  0x3f52e0	= ./pad_recognize/timg/tt_remocon_han_light.tpl
+  0x415320	= ./pad_recognize/timg/tt_remocon_nun_body.tpl
+  0x435360	= ./pad_recognize/timg/tt_remocon_nun_light.tpl
+		= ./press_start/
+		= ./press_start/anim/
+  0x4553a0	= ./press_start/anim/press_start_fade_in.brlan
+  0x4554e0	= ./press_start/anim/press_start_fade_in_before_after.brlan
+  0x455620	= ./press_start/anim/press_start_light_loop.brlan
+  0x455820	= ./press_start/anim/press_start_press_start_anim.brlan
+  0x455a00	= ./press_start/anim/press_start_press_start_anim_before.brlan
+		= ./press_start/blyt/
+  0x455bc0	= ./press_start/blyt/press_start.brlyt
+		= ./press_start/ctrl/
+  0x455f60	= ./press_start/ctrl/PressStart.brctr
+		= ./result/
+		= ./result/anim/
+  0x456140	= ./result/anim/common_w051_team_blue_red_chara_point_flash.brlan
+  0x456620	= ./result/anim/common_w051_team_blue_red_chara_point_flash_stop.brlan
+  0x456a20	= ./result/anim/common_w051_team_blue_red_chara_point_gold_loop.brlan
+  0x456b20	= ./result/anim/common_w051_team_blue_red_chara_point_select_gold_parts.brlan
+  0x456c60	= ./result/anim/common_w051_team_blue_red_chara_point_select_gold_parts_nasi.brlan
+  0x456d80	= ./result/anim/common_w054_team_big_total_point_blue_team.brlan
+  0x456ee0	= ./result/anim/common_w054_team_big_total_point_red_team.brlan
+  0x457040	= ./result/anim/common_w121_ending_team_blue_red_chara_point_1p_color.brlan
+  0x457600	= ./result/anim/common_w121_ending_team_blue_red_chara_point_2p_color.brlan
+  0x457bc0	= ./result/anim/common_w121_ending_team_blue_red_chara_point_3p_color.brlan
+  0x458180	= ./result/anim/common_w121_ending_team_blue_red_chara_point_4p_color.brlan
+  0x458740	= ./result/anim/common_w121_ending_team_blue_red_chara_point_blue_color_clear.brlan
+  0x458e00	= ./result/anim/common_w121_ending_team_blue_red_chara_point_blue_team_color.brlan
+  0x4593c0	= ./result/anim/common_w121_ending_team_blue_red_chara_point_color_off.brlan
+  0x459560	= ./result/anim/common_w121_ending_team_blue_red_chara_point_color_on.brlan
+  0x459640	= ./result/anim/common_w121_ending_team_blue_red_chara_point_com_c_off.brlan
+  0x459d60	= ./result/anim/common_w121_ending_team_blue_red_chara_point_flash.brlan
+  0x459ec0	= ./result/anim/common_w121_ending_team_blue_red_chara_point_flash_stop.brlan
+  0x45a4e0	= ./result/anim/common_w121_ending_team_blue_red_chara_point_gold_loop.brlan
+  0x45a580	= ./result/anim/common_w121_ending_team_blue_red_chara_point_red_color_clear.brlan
+  0x45ac20	= ./result/anim/common_w121_ending_team_blue_red_chara_point_red_team_color.brlan
+  0x45b1e0	= ./result/anim/common_w121_ending_team_blue_red_chara_point_select_gold_parts.brlan
+  0x45b2c0	= ./result/anim/common_w121_ending_team_blue_red_chara_point_select_gold_parts_nasi.brlan
+  0x45b3c0	= ./result/anim/position_12players_1p_color.brlan
+  0x45bb20	= ./result/anim/position_12players_2p_color.brlan
+  0x45c280	= ./result/anim/position_12players_3p_color.brlan
+  0x45c9e0	= ./result/anim/position_12players_4p_color.brlan
+  0x45d1c0	= ./result/anim/position_12players_blue_color.brlan
+  0x45db60	= ./result/anim/position_12players_blue_color_clear.brlan
+  0x45e500	= ./result/anim/position_12players_blue_team_color.brlan
+  0x45ec60	= ./result/anim/position_12players_color_off.brlan
+  0x45f040	= ./result/anim/position_12players_color_on.brlan
+  0x45f300	= ./result/anim/position_12players_c_off.brlan
+  0x45fa60	= ./result/anim/position_12players_icon_free_color_gold_off.brlan
+  0x4601c0	= ./result/anim/position_12players_icon_select_color_on.brlan
+  0x460920	= ./result/anim/position_12players_icon_select_gold1and2_rote.brlan
+  0x460a60	= ./result/anim/position_12players_icon_slide_in_before.brlan
+  0x460b40	= ./result/anim/position_12players_icon_slide_out_anim.brlan
+  0x460c00	= ./result/anim/position_12players_icon_slid_in_text_fade_in_anim.brlan
+  0x460fe0	= ./result/anim/position_12players_icon_wait_position.brlan
+  0x4610a0	= ./result/anim/position_12players_red_color.brlan
+  0x461a60	= ./result/anim/position_12players_red_color_clear.brlan
+  0x462420	= ./result/anim/position_12players_red_team_color.brlan
+  0x462b80	= ./result/anim/position_12players_time_attack_1p_color.brlan
+  0x4632e0	= ./result/anim/position_12players_time_attack_2p_color.brlan
+  0x463a40	= ./result/anim/position_12players_time_attack_3p_color.brlan
+  0x4641a0	= ./result/anim/position_12players_time_attack_4p_color.brlan
+  0x464940	= ./result/anim/position_12players_time_attack_blue_color.brlan
+  0x4652e0	= ./result/anim/position_12players_time_attack_blue_color_clear.brlan
+  0x465c80	= ./result/anim/position_12players_time_attack_blue_team_color.brlan
+  0x4663e0	= ./result/anim/position_12players_time_attack_color_off.brlan
+  0x4667c0	= ./result/anim/position_12players_time_attack_color_on.brlan
+  0x466a80	= ./result/anim/position_12players_time_attack_c_off.brlan
+  0x4671e0	= ./result/anim/position_12players_time_attack_icon_free_color_gold_off.brlan
+  0x467940	= ./result/anim/position_12players_time_attack_icon_select_color_on.brlan
+  0x4680a0	= ./result/anim/position_12players_time_attack_icon_select_gold1and2_rote.brlan
+  0x4681e0	= ./result/anim/position_12players_time_attack_icon_slide_in_before.brlan
+  0x4682c0	= ./result/anim/position_12players_time_attack_icon_slide_out_anim.brlan
+  0x468380	= ./result/anim/position_12players_time_attack_icon_slid_in_text_fade_in_anim.brlan
+  0x468760	= ./result/anim/position_12players_time_attack_icon_wait_position.brlan
+  0x468820	= ./result/anim/position_12players_time_attack_red_color.brlan
+  0x4691e0	= ./result/anim/position_12players_time_attack_red_color_clear.brlan
+  0x469ba0	= ./result/anim/position_12players_time_attack_red_team_color.brlan
+		= ./result/blyt/
+  0x46a300	= ./result/blyt/character_64x64_common.brlyt
+  0x46c260	= ./result/blyt/common_w051_team_blue_red_chara_point.brlyt
+  0x46d6a0	= ./result/blyt/common_w054_team_big_total_point.brlyt
+  0x46db40	= ./result/blyt/common_w121_ending_team_blue_red_chara_point.brlyt
+  0x46eaa0	= ./result/blyt/null.brlyt
+  0x46eba0	= ./result/blyt/position_12players.brlyt
+  0x46fce0	= ./result/blyt/position_12players_time_attack.brlyt
+		= ./result/ctrl/
+  0x470e20	= ./result/ctrl/ResultBTTeamNULL.brctr
+  0x470f00	= ./result/ctrl/ResultGP.brctr
+  0x4716e0	= ./result/ctrl/ResultTA.brctr
+  0x471fa0	= ./result/ctrl/ResultTeamPoint.brctr
+  0x472120	= ./result/ctrl/ResultVS.brctr
+  0x472900	= ./result/ctrl/ResultVSTeam.brctr
+  0x472ce0	= ./result/ctrl/ResultVSTeamNULL.brctr
+  0x472e00	= ./result/ctrl/WifiAwardItem.brctr
+  0x473940	= ./result/ctrl/ResultBTTeamNULL_24.brctr
+  0x473a20	= ./result/ctrl/ResultGP_24.brctr
+  0x474520	= ./result/ctrl/ResultTeamPoint_24.brctr
+  0x4746a0	= ./result/ctrl/ResultVS_24.brctr
+  0x4751a0	= ./result/ctrl/ResultVSTeam_24.brctr
+  0x475720	= ./result/ctrl/ResultVSTeamNULL_24.brctr
+  0x475840	= ./result/ctrl/WifiAwardItem_24.brctr
+		= ./result/timg/
+  0x4766a0	= ./result/timg/ht_squareWhite_00.tpl
+  0x476700	= ./result/timg/tt_baby_daisy_64x64.tpl
+  0x478740	= ./result/timg/tt_baby_luigi_64x64.tpl
+  0x47a780	= ./result/timg/tt_baby_mario_64x64.tpl
+  0x47c7c0	= ./result/timg/tt_baby_peach_64x64.tpl
+  0x47e800	= ./result/timg/tt_block_16x16.tpl
+  0x47ec40	= ./result/timg/tt_boss_packun_64x64.tpl
+  0x480c80	= ./result/timg/tt_catherine_64x64.tpl
+  0x482cc0	= ./result/timg/tt_daisy_64x64.tpl
+  0x484d00	= ./result/timg/tt_didy_64x64.tpl
+  0x486d40	= ./result/timg/tt_donky_64x64.tpl
+  0x488d80	= ./result/timg/tt_funky_64x64.tpl
+  0x48adc0	= ./result/timg/tt_hammer_64x64.tpl
+  0x48ce00	= ./result/timg/tt_hatena_64x64.tpl
+  0x48ee40	= ./result/timg/tt_hone_koopa_64x64.tpl
+  0x490e80	= ./result/timg/tt_karon_64x64.tpl
+  0x492ec0	= ./result/timg/tt_kinopico_64x64.tpl
+  0x494f00	= ./result/timg/tt_kinopio_64x64.tpl
+  0x496f40	= ./result/timg/tt_koopa_64x64.tpl
+  0x498f80	= ./result/timg/tt_koopa_jr_64x64.tpl
+  0x49afc0	= ./result/timg/tt_luigi_64x64.tpl
+  0x49d000	= ./result/timg/tt_mario_64x64.tpl
+  0x49f040	= ./result/timg/tt_mii_suit_a_64x64.tpl
+  0x4a1080	= ./result/timg/tt_mii_suit_b_64x64.tpl
+  0x4a30c0	= ./result/timg/tt_mii_suit_c_64x64.tpl
+  0x4a5100	= ./result/timg/tt_noko_64x64.tpl
+  0x4a7140	= ./result/timg/tt_pata_64x64.tpl
+  0x4a9180	= ./result/timg/tt_pattern_chek_32x32_alpha.tpl
+  0x4a99c0	= ./result/timg/tt_pattern_chek_bokashi_32x32.tpl
+  0x4aa200	= ./result/timg/tt_peach_64x64.tpl
+  0x4ac240	= ./result/timg/tt_roseta_64x64.tpl
+  0x4ae280	= ./result/timg/tt_teresa_64x64.tpl
+  0x4b02c0	= ./result/timg/tt_waluigi_64x64.tpl
+  0x4b2300	= ./result/timg/tt_wario_64x64.tpl
+  0x4b4340	= ./result/timg/tt_yoshi_64x64.tpl
+
+#------------------------------------------------------------------------------
+

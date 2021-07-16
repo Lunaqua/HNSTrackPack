@@ -21,5 +21,6 @@ Download the latest release. You can then use the pack as a mystuff with another
 It is of course, intended for the Hide and Seek mod.
 
 # Special Thanks
-CLF78, Ismy: for making this great mod.
-Track Creators: for doing what you've done for over 10 years now.
+	CLF78, Ismy: for making this great mod.
+	Track Creators: for doing what you've done for over 10 years now.
+	DarkyBenji: creator of the mkdd gui and font mod.

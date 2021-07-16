@@ -1,0 +1,11 @@
+This document contain notes relating to the testing of custom battle arenas.
+
+GCN Tilt-a-Kart - Works correclty in hns, unknown in balloon battle.
+
+DS Tart Top - Boots correctly. Crashes at match end. Will probably work in hns correctly.
+
+GCN Luigi's Mansion - Works correclty in hns, unknown in balloon battle.
+
+GCN Pipe Plaza - Works correclty in hns, unknown in balloon battle.
+
+Heart of China - Good.
