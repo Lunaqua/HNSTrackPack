@@ -3,8 +3,8 @@ Navi's "HAVE FUN" Hide and Seek Pack.
 
 2.3 -	DKSC	-	Cannon City
 3.3 -	MT		-	Punch City 2
-5.1 -	gcPB	-	Rush City Run
-4.2 -	MH		-	Wuhu Island Loop
+5.1 -	gcPB		-	Rush City Run
+4.2 -	MH		-	3DS Wuhu Island Loop
 
 1.1 -	LC		-	Nightmare
 4.1 -	DDR		-	Darky Cliff
@@ -13,8 +13,8 @@ Navi's "HAVE FUN" Hide and Seek Pack.
 
 8.4 -	nBC		-	Melting Magma Melee
 4.3 -	BC		-	Nuclear Power
-6.4 -	gWS		-	Wario Colessium
-5.3 -	ssGV	-	GBA Boo Lake
+6.4 -	gWS		-	GCN Wario Colosseum
+5.3 -	ssGV		-	GBA Boo Lake
 
 1.4 -	TF		-	Star Slope
 1.2 -	MMM		-	Petite Park
@@ -32,17 +32,16 @@ Navi's "HAVE FUN" Hide and Seek Pack.
 7.3 -	nDJP	-	Electric Shredder
 
 4.4 -	RR		-	SNES Rainbow Road
-5.2 -	dsYF	-	The Void
-8.2 -	dsPG	-	DS Rainbow Road
+5.2 -	dsYF		-	The Void
+8.2 -	dsPG		-	DS Rainbow Road 
 6.1 -	nSL		-	PMWR Cloud Garden
 
 5.4 -	nMR		-	Fishdom Island
-6.3 -	dsDS	-	Monaco GP 
-7.1 -	dsDH	-	Wuhu Mountain Loop
-7.4 -	gcMC	-	GP Mario Beach		-	(Fix Speed Mod) 
-
+6.3 -	dsDS		-	Monaco GP 
+7.1 -	dsDH		-	3DS Wuhu Mountain Loop
+7.4 -	gcMC		-	GP Mario Beach		-	(Fix Speed Mod) 
 *Probably looking to replace
-
+!Need to update
 -----------------------------------------------
 Battle Arenas (Temporary Until Battle Tracks are Patched)
 

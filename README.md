@@ -14,10 +14,11 @@ You can take a look at the tracklist.txt file, or load up the game and find out!
 
 ## Where can I find more tracks, find out who made these ones?
 Check out https://wiki.tockdom.com for more tracks and other MKWii mods.
-To find out who made the tracks, for now just search them on the wiki.
+To find out who made the tracks, check here: https://wiki.tockdom.com/wiki/Navi%27s_HNS_CT_Pack
 
-### I have a suggestion...
-Please make a pull request to the community branch, following the instructions contained in ./Tracklist/CommunitySuggestion.txt
+### How do I use this
+Download the latest release. You can then use the pack as a mystuff with another distribution, or as a standalone riivolution pack.
+It is of course, intended for the Hide and Seek mod.
 
 # Special Thanks
 	CLF78, Ismy: for making this great mod.
