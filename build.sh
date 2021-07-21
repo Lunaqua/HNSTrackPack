@@ -120,7 +120,7 @@ printf "* Creating My Stuff \n"
 printf "** Preparing Folder \n"
 mkdir "NaviHNSPack"
 cd NaviHNSPack
-mkdir Riivolution
+mkdir riivolution
 mkdir hns
 cd hns
 mkdir navihns
@@ -153,6 +153,8 @@ cp ./UncompressedTemplates/Race_U.szs NaviHNSPack/hns/navihns/packone/regional/r
 cp ./WorkingDir/*.szs NaviHNSPack/hns/navihns/extra
 cp -r ./StaticR/P/StaticR.rel NaviHNSPack/hns/navihns/packone/staticr/StaticR-P.rel
 cp -r ./StaticR/E/StaticR.rel NaviHNSPack/hns/navihns/packone/staticr/StaticR-E.rel
+
+cp ./Riivolution/navi.xml NaviHNSPack/riivolution
 
 cp ./ISOPatch/readme.txt NaviHNSPack/
 rm -rf ./WorkingDir/
