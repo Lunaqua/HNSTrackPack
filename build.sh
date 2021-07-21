@@ -117,18 +117,42 @@ cd ..
 cd ..
 
 printf "* Creating My Stuff \n"
-mkdir "My Stuff"
+printf "** Preparing Folder \n"
+mkdir "NaviHNSPack"
+cd NaviHNSPack
+mkdir Riivolution
+mkdir hns
+cd hns
+mkdir navihns
+cd navihns
+mkdir extra
+mkdir packone
+cd packone
+mkdir staticr
+mkdir regional
+cd regional
+mkdir region-J
+mkdir region-P
+mkdir region-E
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
 
-cp ./Tracklist/tracklist.txt My\ Stuff/
-cp ./Tracks/* My\ Stuff
-cp ./Arenas/* My\ Stuff
-cp ./UncompressedTemplates/MenuSingle* My\ Stuff
-cp ./UncompressedTemplates/Font.szs My\ Stuff
-cp ./UncompressedTemplates/Race* My\ Stuff
-cp ./WorkingDir/*.szs My\ Stuff
-cp -r ./StaticR/ My\ Stuff
+cp ./Tracklist/tracklist.txt NaviHNSPack
+cp -r ./Tracks/ NaviHNSPack/packone
+cp -r ./Arenas/* NaviHNSPack/packone
+cp ./UncompressedTemplates/MenuSingle_E.szs NaviHNSPack/packone/regional/region-P
+cp ./UncompressedTemplates/MenuSingle_U.szs NaviHNSPack/packone/regional/region-E
+cp ./UncompressedTemplates/Font.szs NaviHNSPack/extra
+cp ./UncompressedTemplates/Race_E.szs NaviHNSPack/packone/regional/region-P
+cp ./UncompressedTemplates/Race_U.szs NaviHNSPack/packone/regional/region-E
+cp ./WorkingDir/*.szs NaviHNSPack/extra
+cp -r ./StaticR/P/StaticR.rel NaviHNSPack/packone/staticr/StaticR-P.rel
+cp -r ./StaticR/E/StaticR.rel NaviHNSPack/packone/staticr/StaticR-E.rel
 
-cp ./ISOPatch/readme.txt My\ Stuff
+cp ./ISOPatch/readme.txt NaviHNSPack
 
 rm ./My\ Stuff/StaticR/P/StaticR.rel.bak
 rm ./My\ Stuff/StaticR/E/StaticR.rel.bak

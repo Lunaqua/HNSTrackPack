@@ -6,8 +6,8 @@ printf "This file will clean your repo, any allow you create a new build\n"
 printf "Press [enter] to DELETE ALL BUILT FILES, this includes the 'my stuff' directory\n"
 read dummy
 
-rm -r ./My\ Stuff/*
-rmdir My\ Stuff
+rm -r ./NaviHNSPack/*
+rmdir NaviHNSPack
 
 rm ./*.7z
 
