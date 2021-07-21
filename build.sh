@@ -140,28 +140,27 @@ cd ..
 cd ..
 cd ..
 
+printf "** Moving Files \n"
+
 cp ./Tracklist/tracklist.txt NaviHNSPack
-cp -r ./Tracks/ NaviHNSPack/packone
-cp -r ./Arenas/* NaviHNSPack/packone
-cp ./UncompressedTemplates/MenuSingle_E.szs NaviHNSPack/packone/regional/region-P
-cp ./UncompressedTemplates/MenuSingle_U.szs NaviHNSPack/packone/regional/region-E
-cp ./UncompressedTemplates/Font.szs NaviHNSPack/extra
-cp ./UncompressedTemplates/Race_E.szs NaviHNSPack/packone/regional/region-P
-cp ./UncompressedTemplates/Race_U.szs NaviHNSPack/packone/regional/region-E
-cp ./WorkingDir/*.szs NaviHNSPack/extra
-cp -r ./StaticR/P/StaticR.rel NaviHNSPack/packone/staticr/StaticR-P.rel
-cp -r ./StaticR/E/StaticR.rel NaviHNSPack/packone/staticr/StaticR-E.rel
+cp -r ./Tracks/ NaviHNSPack/hns/navihns/packone
+cp -r ./Arenas/ NaviHNSPack/hns/navihns/packone
+cp ./UncompressedTemplates/MenuSingle_E.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
+cp ./UncompressedTemplates/MenuSingle_U.szs NaviHNSPack/hns/navihns/packone/regional/region-E/
+cp ./UncompressedTemplates/Font.szs NaviHNSPack/hns/navihns/extra/
+cp ./UncompressedTemplates/Race_E.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
+cp ./UncompressedTemplates/Race_U.szs NaviHNSPack/hns/navihns/packone/regional/region-E/
+cp ./WorkingDir/*.szs NaviHNSPack/hns/navihns/extra
+cp -r ./StaticR/P/StaticR.rel NaviHNSPack/hns/navihns/packone/staticr/StaticR-P.rel
+cp -r ./StaticR/E/StaticR.rel NaviHNSPack/hns/navihns/packone/staticr/StaticR-E.rel
 
-cp ./ISOPatch/readme.txt NaviHNSPack
-
-rm ./My\ Stuff/StaticR/P/StaticR.rel.bak
-rm ./My\ Stuff/StaticR/E/StaticR.rel.bak
+cp ./ISOPatch/readme.txt NaviHNSPack/
 rm -rf ./WorkingDir/
 
 printf "* Creating Archive \n"
 printf "* Specify Version Tag \n"
 read verTag
-7z a HNSTrackPack_$verTag.7z My\ Stuff
+7z a HNSTrackPack_$verTag.7z NaviHNSPack
 
 printf "\nMy Stuff has been prepared."
 printf "\nPress [enter] to exit"
