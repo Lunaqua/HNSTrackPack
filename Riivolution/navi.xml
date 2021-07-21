@@ -1,0 +1,25 @@
+<wiidisc version="1">
+    <id game="RMC"/>
+    <options>
+        <section name="Hide and Seek">
+            
+            <option name="Navi's HNS Pack">
+                <choice name="Enabled">
+                    <patch id="packEnabled" />
+                </choice>
+                <choice name="Enabled (Music Only)">
+                    <patch id="musicEnabled" />
+                </choice>
+            </option>
+            
+        </section>
+    </options>
+
+    <patch id="packEnabled">
+        <memory offset="0x8000400E" value="01" />
+    </patch>
+    
+    <patch id="musicEnabled">
+    </patch>
+
+</wiidisc>
