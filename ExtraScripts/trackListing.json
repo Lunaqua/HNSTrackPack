@@ -1,0 +1,264 @@
+{
+    "Tracks": [
+        {
+            "Number": "0",
+            "Slot": "T11",
+            "Track": "Nightmare"
+        },
+        {
+            "Number": "1",
+            "Slot": "T12",
+            "Track": "Petite Park"
+        },
+        {
+            "Number": "2",
+            "Slot": "T13",
+            "Track": "Mushroom Mountain"
+        },
+        {
+            "Number": "3",
+            "Slot": "T14",
+            "Track": "Star Slope"
+        },
+        {
+            "Number": "4",
+            "Slot": "T21",
+            "Track": "Strobenz Desert"
+        },
+        {
+            "Number": "5",
+            "Slot": "T22",
+            "Track": "SM64 Whomp's Fortress"
+        },
+        {
+            "Number": "6",
+            "Slot": "T23",
+            "Track": "Cannon City"
+        },
+        {
+            "Number": "7",
+            "Slot": "T24",
+            "Track": "asdf course"
+        },
+        {
+            "Number": "8",
+            "Slot": "T31",
+            "Track": "Suzuka Circuit"
+        },
+        {
+            "Number": "9",
+            "Slot": "T32",
+            "Track": "GCN Baby Park"
+        },
+        {
+            "Number": "10",
+            "Slot": "T33",
+            "Track": "Punch City 2"
+        },
+        {
+            "Number": "11",
+            "Slot": "T34",
+            "Track": "Incendia Castle"
+        },
+        {
+            "Number": "12",
+            "Slot": "T41",
+            "Track": "Darky Cliff"
+        },
+        {
+            "Number": "13",
+            "Slot": "T42",
+            "Track": "Wuhu Island Loop"
+        },
+        {
+            "Number": "14",
+            "Slot": "T43",
+            "Track": "Nuclear Power"
+        },
+        {
+            "Number": "15",
+            "Slot": "T44",
+            "Track": "SNES Rainbow Road"
+        },
+        {
+            "Number": "16",
+            "Slot": "T51",
+            "Track": "Rush City Run"
+        },
+        {
+            "Number": "17",
+            "Slot": "T52",
+            "Track": "The Void"
+        },
+        {
+            "Number": "18",
+            "Slot": "T53",
+            "Track": "GBA Boo Lake"
+        },
+        {
+            "Number": "19",
+            "Slot": "T54",
+            "Track": "Fishdom Island"
+        },
+        {
+            "Number": "20",
+            "Slot": "T61",
+            "Track": "PMWR Cloud Garden"
+        },
+        {
+            "Number": "21",
+            "Slot": "T62",
+            "Track": "N64 Yoshi Valley"
+        },
+        {
+            "Number": "22",
+            "Slot": "T63",
+            "Track": "Monaco GP"
+        },
+        {
+            "Number": "23",
+            "Slot": "T64",
+            "Track": "Wario Colosseum"
+        },
+        {
+            "Number": "24",
+            "Slot": "T71",
+            "Track": "Wuhu Mountain Loop"
+        },
+        {
+            "Number": "25",
+            "Slot": "T72",
+            "Track": "VVVVVV Circuit"
+        },
+        {
+            "Number": "26",
+            "Slot": "T73",
+            "Track": "Electic Shredder"
+        },
+        {
+            "Number": "27",
+            "Slot": "T74",
+            "Track": "GP Mario Beach"
+        },
+        {
+            "Number": "28",
+            "Slot": "T81",
+            "Track": "Yellow Loop"
+        },
+        {
+            "Number": "29",
+            "Slot": "T82",
+            "Track": "DS Rainbow Road"
+        },
+        {
+            "Number": "30",
+            "Slot": "T83",
+            "Track": "Vesuvio's Inferno"
+        },
+        {
+            "Number": "31",
+            "Slot": "T84",
+            "Track": "Melting Magma Melee"
+        },
+        {
+            "Number": "32",
+            "Slot": "U11",
+            "Track": "GCN Tilt-a-Kart"
+        },
+        {
+            "Number": "33",
+            "Slot": "U12",
+            "Track": "Battle-Race Resort"
+        },
+        {
+            "Number": "34",
+            "Slot": "U13",
+            "Track": "Bash 'n' Dash 'n' Bash"
+        },
+        {
+            "Number": "35",
+            "Slot": "U14",
+            "Track": "DS Tart Top"
+        },
+        {
+            "Number": "36",
+            "Slot": "U15",
+            "Track": "GCN Luigi's Mansion"
+        },
+        {
+            "Number": "37",
+            "Slot": "U21",
+            "Track": "DKR Star City"
+        },
+        {
+            "Number": "38",
+            "Slot": "U22",
+            "Track": "Neon Dimension"
+        },
+        {
+            "Number": "39",
+            "Slot": "U23",
+            "Track": "GCN Pipe Plaza"
+        },
+        {
+            "Number": "40",
+            "Slot": "U24",
+            "Track": "SM64 Cool, Cool Mountain Slide"
+        },
+        {
+            "Number": "41",
+            "Slot": "U25",
+            "Track": "Heart of China"
+        },
+        {
+            "Number": "42",
+            "Slot": "23f0",
+            "Track": "City Cup"
+        },
+        {
+            "Number": "43",
+            "Slot": "23f1",
+            "Track": "Tricky Cup"
+        },
+        {
+            "Number": "44",
+            "Slot": "23f2",
+            "Track": "Good Cup"
+        },
+        {
+            "Number": "45",
+            "Slot": "23f3",
+            "Track": "Classic Cup"
+        },
+        {
+            "Number": "41",
+            "Slot": "23f4",
+            "Track": "Large Cup"
+        },
+        {
+            "Number": "46",
+            "Slot": "23f5",
+            "Track": "Small Cup"
+        },
+        {
+            "Number": "47",
+            "Slot": "23f6",
+            "Track": "Sky/Space Cup"
+        },
+        {
+            "Number": "48",
+            "Slot": "23f7",
+            "Track": "Other Cup"
+        },
+        {
+            "Number": "49",
+            "Slot": "2489",
+            "Track": "Custom Cup"
+        },
+        {
+            "Number": "50",
+            "Slot": "248a",
+            "Track": "Retro Cup"
+        }
+    ]
+}

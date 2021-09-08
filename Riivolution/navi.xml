@@ -1,41 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
 <wiidisc version="1">
-    <id game="RMC"/>
-    <options>
-        <section name="Hide and Seek">
-            
-            <option name="Navi's HNS Pack">
-                <choice name="Pack One">
-                    <patch id="packOneEnabledNoPatch" />
-                </choice>
-                <choice name="Pack One (No MemPatch)">
-                    <patch id="packOneEnabled" />
-                </choice>
-                <choice name="Pack One (Music Only)">
-                    <patch id="musicOneEnabled" />
-                </choice>
-            </option>
-            
-        </section>
-    </options>
-
-    <patch id="packOneEnabled">
-        <memory offset="0x8000400E" value="01" />
-        <file disc="/rel/StaticR.rel" external="/hns/navihns/packone/staticr/StaticR-{$__region}.rel" />
-        <folder disc="/Scene/UI" external="/hns/navihns/extra" />
-        <folder disc="/Race/Course" external="/hns/navihns/packone/Arenas" />
-        <folder disc="/Race/Course" external="/hns/navihns/packone/Tracks" />
-        <folder disc="/Scene/UI" external="/hns/navihns/packone/regional/region-{$__region}" />
-    </patch>
-    
-    <patch id="packOneEnabledNoPatch">
-        <file disc="/rel/StaticR.rel" external="/hns/navihns/packone/staticr/StaticR-{$__region}.rel" />
-        <folder disc="/Scene/UI" external="/hns/navihns/extra" />
-        <folder disc="/Race/Course" external="/hns/navihns/packone/Arenas" />
-        <folder disc="/Race/Course" external="/hns/navihns/packone/Tracks" />
-        <folder disc="/Scene/UI" external="/hns/navihns/packone/regional/region-{$__region}" />
-    </patch>
-    
-    <patch id="musicOneEnabled">
-    </patch>
-
+	<id game="RMC"/>
+	<options>
+		<section name="Hide and Seek">
+			<option name="Navi's HNS Pack">
+				<choice name="Pack One">
+					<patch id="packOneEnabledNoPatch" />
+				</choice>
+				<choice name="Pack One (No Music)">
+					<patch id="PackOneNoMusic" />
+				</choice>
+			</option>
+			<option name="HNS Memory Patch">
+				<choice name="Enabled">
+					<patch id="hnsMemPatch" />
+				</choice>
+			</option>
+			<option name="CTGP My Stuff">
+				<choice name="Enabled">
+					<patch id="ctgpMyStuff"/>
+				</choice>
+			</option>
+		</section>
+	</options>
+	<patch id="hnsMemPatch">
+		<memory offset="0x8000400E" value="01" />
+	</patch>
+	<patch id="packOneEnabledNoPatch">
+		<file disc="/rel/StaticR.rel" external="/hns/navihns/packone/staticr/StaticR-{$__region}.rel" />
+		<folder disc="/Scene/UI" external="/hns/navihns/extra" />
+		<folder disc="/Race/Course" external="/hns/navihns/packone/Arenas" />
+		<folder disc="/Race/Course" external="/hns/navihns/packone/Tracks" />
+		<folder disc="/Scene/UI" external="/hns/navihns/packone/regional/region-{$__region}" />
+	</patch>
+	<patch id="packOneNoMusic">
+		<file disc="/rel/StaticR.rel" external="/hns/navihns/packone/staticr/StaticR-{$__region}.rel" />
+		<folder disc="/Scene/UI" external="/hns/navihns/extra" />
+		<folder disc="/Race/Course" external="/hns/navihns/packone/Arenas" />
+		<folder disc="/Race/Course" external="/hns/navihns/packone/Tracks" />
+		<folder disc="/Scene/UI" external="/hns/navihns/packone/regional/region-{$__region}" />
+	</patch>
+	<patch id="ctgpMyStuff">
+		<folder external="/ctgpr/My Stuff" recursive="false" />
+		<folder external="/ctgpr/My Stuff" disc="/" />
+	</patch>
 </wiidisc>

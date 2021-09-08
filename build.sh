@@ -17,13 +17,7 @@ read dummy
 
 mkdir WorkingDir
 
-printf "* Creating Common.bmg \n"
-cd UncompressedTemplates
-wbmgt encode Common.txt $WSZSTFLAG
-
-printf "* Creating regional menusingles \n"
-cp Common.bmg ./MenuSingle_E.d/message/
-cp Common.bmg ./MenuSingle_U.d/message/
+bash ./ExtraScripts/CommonPrepare.sh
 
 printf "* Preparing MenuSingle \n"
 #Prepare MenuSingle
@@ -93,7 +87,7 @@ cp -f ./UncompressedTemplates/Race.d/message_window/timg/*.tpl ./WorkingDir/Race
 cd UncompressedTemplates
 
 printf "* Creating all of the .szs files \n"
-wszst create MenuSingle_E.d MenuSingle_U.d Font.d Race_E.d Race_U.d
+wszst create MenuSingle_E.d MenuSingle_U.d MenuSingle_F.d MenuSingle_G.d MenuSingle_S.d Font.d Race_E.d Race_U.d
 cd ..
 cd WorkingDir
 rm MenuSingle.szs
@@ -146,7 +140,11 @@ cp ./Tracklist/tracklist.txt NaviHNSPack
 cp -r ./Tracks/ NaviHNSPack/hns/navihns/packone
 cp -r ./Arenas/ NaviHNSPack/hns/navihns/packone
 cp ./UncompressedTemplates/MenuSingle_E.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
+cp ./UncompressedTemplates/MenuSingle_F.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
+cp ./UncompressedTemplates/MenuSingle_G.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
 cp ./UncompressedTemplates/MenuSingle_U.szs NaviHNSPack/hns/navihns/packone/regional/region-E/
+cp ./UncompressedTemplates/MenuSingle_I.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
+cp ./UncompressedTemplates/MenuSingle_S.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
 cp ./UncompressedTemplates/Font.szs NaviHNSPack/hns/navihns/extra/
 cp ./UncompressedTemplates/Race_E.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
 cp ./UncompressedTemplates/Race_U.szs NaviHNSPack/hns/navihns/packone/regional/region-E/

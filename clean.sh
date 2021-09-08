@@ -15,12 +15,24 @@ cd UncompressedTemplates
 rm Common.bmg
 rm MenuSingle_E.szs
 rm MenuSingle_U.szs
+rm MenuSingle_F.szs
+rm MenuSingle_G.szs
+rm MenuSingle_I.szs
+rm MenuSingle_S.szs
 rm Font.szs
 rm Race_E.szs
 rm Race_U.szs
 
 rm ./MenuSingle_E.d/message/Common.bmg
 rm ./MenuSingle_U.d/message/Common.bmg
+rm ./MenuSingle_F.d/message/Common.bmg
+rm ./MenuSingle_G.d/message/Common.bmg
+rm ./MenuSingle_I.d/message/Common.bmg
+rm ./MenuSingle_S.d/message/Common.bmg
+
+rm ./UncompressedTemplates/Common.bmg/*.bak
+rm ./UncompressedTemplates/Common.bmg/*.txt
+mv ./UncompressedTemplates/Common.bmg/*.txt.backup ./UncompressedTemplates/Common.bmg/*.txt
 
 rm ./MenuSingle.d/bg/timg/*.tpl
 rm ./MenuSingle.d/control/timg/*.tpl
