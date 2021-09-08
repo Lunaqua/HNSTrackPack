@@ -18,6 +18,7 @@ read dummy
 mkdir WorkingDir
 
 bash ./ExtraScripts/CommonPrepare.sh
+cd UncompressedTemplates
 
 printf "* Preparing MenuSingle \n"
 #Prepare MenuSingle
@@ -87,7 +88,7 @@ cp -f ./UncompressedTemplates/Race.d/message_window/timg/*.tpl ./WorkingDir/Race
 cd UncompressedTemplates
 
 printf "* Creating all of the .szs files \n"
-wszst create MenuSingle_E.d MenuSingle_U.d MenuSingle_F.d MenuSingle_G.d MenuSingle_S.d Font.d Race_E.d Race_U.d
+wszst create MenuSingle_E.d MenuSingle_U.d MenuSingle_F.d MenuSingle_G.d MenuSingle_S.d MenuSingle_I.d Font.d Race_E.d Race_U.d
 cd ..
 cd WorkingDir
 rm MenuSingle.szs

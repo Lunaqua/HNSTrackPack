@@ -10,24 +10,24 @@
 
 #--- standard track names
 
-T11	= Nightmare
-T12	= Petite Park
-T13	= Mushroom Mountain
-T14	= Star Slope
+  T11	= Luigi Circuit
+  T12	= Moo Moo Meadows
+  T13	= Mushroom Gorge
+  T14	= Toad's Factory
 
-T21	= Strobenz Desert
-T22	= SM64 Whomp's Fortress
-T23	= Cannon City
-T24	= asdf course
+  T21	= Mario Circuit
+  T22	= Coconut Mall
+  T23	= DK's Snowboard Cross
+  T24	= Wario's Gold Mine
 
-T31	= Suzuka Circuit
-T32	= GCN Baby Park
-T33	= Punch City 2
-T34	= Incendia Castle
+  T31	= Daisy Circuit
+  T32	= Koopa Cape
+  T33	= Maple Treeway
+  T34	= Grumble Volcano
 
-T41	= Darky Cliff
-T42	= Wuhu Island Loop
-T43	= Nuclear Power
+  T41	= Dry Dry Ruins
+  T42	= Moonview Highway
+  T43	= Bowser's Castle
   T44	= Rainbow Road
 
   T51	= GCN Peach Beach
