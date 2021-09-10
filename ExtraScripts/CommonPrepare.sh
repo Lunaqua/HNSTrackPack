@@ -31,22 +31,34 @@ function replaceStrings {
     rm ./../MenuSingle_$1.d/message/common.txt
 }
 
+function intro {
+    echo "* Encoding common.bmg for language $language"
+    replaceStrings $language
+}
+
 language="E"
-echo "Encoding common.bmg for language $language"
-replaceStrings $language
+intro
 
 language="F"
-echo "Encoding common.bmg for language $language"
-replaceStrings $language
+intro
 
 language="G"
-echo "Encoding common.bmg for language $language"
-replaceStrings $language
+intro
 
 language="I"
-echo "Encoding common.bmg for language $language"
-replaceStrings $language
+intro
 
 language="S"
-echo "Encoding common.bmg for language $language"
-replaceStrings $language
+intro
+
+language="M"
+intro
+
+language="J"
+intro
+
+language="Q"
+intro
+
+language="U"
+intro

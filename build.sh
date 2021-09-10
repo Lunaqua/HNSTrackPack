@@ -59,6 +59,55 @@ cd ..
 cd ..
 cd ..
 
+cd Race_F.d/game_image/timg
+wimgt encode * $WSZSTFLAG
+
+cd ..
+cd ..
+cd ..
+
+cd Race_G.d/game_image/timg
+wimgt encode * $WSZSTFLAG
+
+cd ..
+cd ..
+cd ..
+
+cd Race_I.d/game_image/timg
+wimgt encode * $WSZSTFLAG
+
+cd ..
+cd ..
+cd ..
+
+cd Race_J.d/game_image/timg
+wimgt encode * $WSZSTFLAG
+
+cd ..
+cd ..
+cd ..
+
+cd Race_M.d/game_image/timg
+wimgt encode * $WSZSTFLAG
+
+cd ..
+cd ..
+cd ..
+
+cd Race_Q.d/game_image/timg
+wimgt encode * $WSZSTFLAG
+
+cd ..
+cd ..
+cd ..
+
+cd Race_S.d/game_image/timg
+wimgt encode * $WSZSTFLAG
+
+cd ..
+cd ..
+cd ..
+
 printf "* Building Race.szs \n"
 
 cd Race.d/control/timg
@@ -88,7 +137,7 @@ cp -f ./UncompressedTemplates/Race.d/message_window/timg/*.tpl ./WorkingDir/Race
 cd UncompressedTemplates
 
 printf "* Creating all of the .szs files \n"
-wszst create MenuSingle_E.d MenuSingle_U.d MenuSingle_F.d MenuSingle_G.d MenuSingle_S.d MenuSingle_I.d Font.d Race_E.d Race_U.d
+wszst create MenuSingle_E.d MenuSingle_U.d MenuSingle_F.d MenuSingle_G.d MenuSingle_S.d MenuSingle_I.d MenuSingle_J.d MenuSingle_M.d MenuSingle_Q.d Font.d Race_E.d Race_U.d Race_F.d Race_G.d Race_I.d Race_J.d Race_M.d Race_Q.d Race_S.d
 cd ..
 cd WorkingDir
 rm MenuSingle.szs
@@ -107,6 +156,12 @@ cd ..
 cd E
 cp StaticR.rel.bak StaticR.rel
 wstrt patch StaticR.rel --tracks=1.1:=2.3,1.2:=3.3,1.3:=5.1,1.4:=4.2,2.1:=1.1,2.2:=4.1,2.3:=8.3,2.4:=1.3,3.1:=8.4,3.2:=4.3,3.3:=6.4,3.4:=5.3,4.1:=1.4,4.2:=1.2,4.3:=2.1,4.4:=2.4,5.1:=2.2,5.2:=3.1,5.3:=6.2,5.4:=3.4,6.1:=3.2,6.2:=8.1,6.3:=7.2,6.4:=7.3,7.1:=4.4,7.2:=5.2,7.3:=8.2,7.4:=6.1,8.1:=5.4,8.2:=6.3,8.3:=7.1,8.4:=7.4
+
+cd ..
+cd J
+cp StaticR.rel.bak StaticR.rel
+wstrt patch StaticR.rel --tracks=1.1:=2.3,1.2:=3.3,1.3:=5.1,1.4:=4.2,2.1:=1.1,2.2:=4.1,2.3:=8.3,2.4:=1.3,3.1:=8.4,3.2:=4.3,3.3:=6.4,3.4:=5.3,4.1:=1.4,4.2:=1.2,4.3:=2.1,4.4:=2.4,5.1:=2.2,5.2:=3.1,5.3:=6.2,5.4:=3.4,6.1:=3.2,6.2:=8.1,6.3:=7.2,6.4:=7.3,7.1:=4.4,7.2:=5.2,7.3:=8.2,7.4:=6.1,8.1:=5.4,8.2:=6.3,8.3:=7.1,8.4:=7.4
+
 
 cd ..
 cd ..
@@ -146,12 +201,23 @@ cp ./UncompressedTemplates/MenuSingle_G.szs NaviHNSPack/hns/navihns/packone/regi
 cp ./UncompressedTemplates/MenuSingle_U.szs NaviHNSPack/hns/navihns/packone/regional/region-E/
 cp ./UncompressedTemplates/MenuSingle_I.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
 cp ./UncompressedTemplates/MenuSingle_S.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
+cp ./UncompressedTemplates/MenuSingle_M.szs NaviHNSPack/hns/navihns/packone/regional/region-E/
+cp ./UncompressedTemplates/MenuSingle_Q.szs NaviHNSPack/hns/navihns/packone/regional/region-E/
+cp ./UncompressedTemplates/MenuSingle_J.szs NaviHNSPack/hns/navihns/packone/regional/region-J/
 cp ./UncompressedTemplates/Font.szs NaviHNSPack/hns/navihns/extra/
 cp ./UncompressedTemplates/Race_E.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
 cp ./UncompressedTemplates/Race_U.szs NaviHNSPack/hns/navihns/packone/regional/region-E/
+cp ./UncompressedTemplates/Race_F.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
+cp ./UncompressedTemplates/Race_G.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
+cp ./UncompressedTemplates/Race_I.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
+cp ./UncompressedTemplates/Race_J.szs NaviHNSPack/hns/navihns/packone/regional/region-J/
+cp ./UncompressedTemplates/Race_M.szs NaviHNSPack/hns/navihns/packone/regional/region-E/
+cp ./UncompressedTemplates/Race_Q.szs NaviHNSPack/hns/navihns/packone/regional/region-E/
+cp ./UncompressedTemplates/Race_S.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
 cp ./WorkingDir/*.szs NaviHNSPack/hns/navihns/extra
 cp -r ./StaticR/P/StaticR.rel NaviHNSPack/hns/navihns/packone/staticr/StaticR-P.rel
 cp -r ./StaticR/E/StaticR.rel NaviHNSPack/hns/navihns/packone/staticr/StaticR-E.rel
+cp -r ./StaticR/J/StaticR.rel NaviHNSPack/hns/navihns/packone/staticr/StaticR-J.rel
 
 cp ./Riivolution/navi.xml NaviHNSPack/riivolution
 
