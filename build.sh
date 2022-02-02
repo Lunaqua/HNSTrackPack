@@ -174,6 +174,7 @@ mkdir riivolution
 mkdir hns
 cd hns
 mkdir navihns
+mkdir mkw-sp
 cd navihns
 mkdir extra
 mkdir packone
@@ -195,6 +196,7 @@ printf "** Moving Files \n"
 cp ./Tracklist/tracklist.txt NaviHNSPack
 cp -r ./Tracks/ NaviHNSPack/hns/navihns/packone
 cp -r ./Arenas/ NaviHNSPack/hns/navihns/packone
+cp -r ./mkw-spExtraFiles/ NaviHNSPack/hns/navihns/mkw-sp
 cp ./UncompressedTemplates/MenuSingle_E.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
 cp ./UncompressedTemplates/MenuSingle_F.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
 cp ./UncompressedTemplates/MenuSingle_G.szs NaviHNSPack/hns/navihns/packone/regional/region-P/

@@ -16,6 +16,11 @@
 					<patch id="hnsMemPatch" />
 				</choice>
 			</option>
+            <option name="mkw-sp Extra Files">
+				<choice name="Enabled">
+					<patch id="mkwsp"/>
+				</choice>
+			</option>
 			<option name="CTGP My Stuff">
 				<choice name="Enabled">
 					<patch id="ctgpMyStuff"/>
@@ -44,4 +49,7 @@
 		<folder external="/ctgpr/My Stuff" recursive="false" />
 		<folder external="/ctgpr/My Stuff" disc="/" />
 	</patch>
+    <patch id="mkwsp">
+        <folder external="/hns/navihns/mkw-sp" disc="/mkw-sp/disc/Scene/UI" create="true">
+    </patch>
 </wiidisc>

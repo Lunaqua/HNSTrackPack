@@ -40,6 +40,7 @@ Navi's "HAVE FUN" Hide and Seek Pack.
 6.3 -	dsDS		-	Monaco GP 
 7.1 -	dsDH		-	3DS Wuhu Mountain Loop
 7.4 -	gcMC		-	GP Mario Beach		-	(Fix Speed Mod) 
+
 *Probably looking to replace
 !Need to update
 -----------------------------------------------
@@ -61,6 +62,7 @@ Battle Arenas (Temporary Until Battle Tracks are Patched)
 &Working in Balloon Battle
 £Working in Hide and Seek
 ~Works perfectly
+
 -----------------------------------------------
 Battle Arenas (Currently Testing)
 
@@ -82,6 +84,7 @@ Battle Arenas (Currently Testing)
 &Working in Balloon Battle
 £Working in Hide and Seek
 ~Works perfectly
+
 -----------------------------------------------
 Potential Extra Candiates for Replacement
 -----------------------------------------------

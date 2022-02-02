@@ -52,9 +52,9 @@ rm ./MenuSingle_M.d/message/Common.bmg
 rm ./MenuSingle_Q.d/message/Common.bmg
 rm ./MenuSingle_J.d/message/Common.bmg
 
-rm ./Common.bmg/*.bak
-rm ./Common.bmg/*.txt
-mv ./Common.bmg/*.txt.backup ./Common.bmg/*.txt
+#rm ./Common.bmg/*.bak
+#rm ./Common.bmg/*.txt
+#mv ./Common.bmg/*.txt.backup ./Common.bmg/*.txt
 
 rm ./MenuSingle.d/bg/timg/*.tpl
 rm ./MenuSingle.d/control/timg/*.tpl
