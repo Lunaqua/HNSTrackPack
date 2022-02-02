@@ -2,7 +2,7 @@
 <wiidisc version="1">
 	<id game="RMC"/>
 	<options>
-		<section name="Hide and Seek">
+		<section name="Navi's HNS Pack">
 			<option name="Navi's HNS Pack">
 				<choice name="Pack One">
 					<patch id="packOneEnabledNoPatch" />
@@ -14,11 +14,6 @@
 			<option name="HNS Memory Patch">
 				<choice name="Enabled">
 					<patch id="hnsMemPatch" />
-				</choice>
-			</option>
-            <option name="mkw-sp Extra Files">
-				<choice name="Enabled">
-					<patch id="mkwsp"/>
 				</choice>
 			</option>
 			<option name="CTGP My Stuff">
@@ -49,7 +44,4 @@
 		<folder external="/ctgpr/My Stuff" recursive="false" />
 		<folder external="/ctgpr/My Stuff" disc="/" />
 	</patch>
-    <patch id="mkwsp">
-        <folder external="/hns/navihns/mkw-sp" disc="/mkw-sp/disc/Scene/UI" create="true">
-    </patch>
 </wiidisc>
