@@ -31,6 +31,7 @@ rm Race_M.szs
 rm Race_Q.szs
 rm Race_S.szs
 rm Race_U.szs
+rm Race_Dif.szs
 
 rm ./MenuSingle_E.d/message/Common.bmg
 rm ./MenuSingle_U.d/message/Common.bmg
@@ -48,13 +49,21 @@ rm ./MenuSingle_F.d/message/common.bmg
 rm ./MenuSingle_G.d/message/common.bmg
 rm ./MenuSingle_I.d/message/common.bmg
 rm ./MenuSingle_S.d/message/common.bmg
-rm ./MenuSingle_M.d/message/Common.bmg
-rm ./MenuSingle_Q.d/message/Common.bmg
-rm ./MenuSingle_J.d/message/Common.bmg
+rm ./MenuSingle_M.d/message/common.bmg
+rm ./MenuSingle_Q.d/message/common.bmg
+rm ./MenuSingle_J.d/message/common.bmg
 
 #rm ./Common.bmg/*.bak
 #rm ./Common.bmg/*.txt
-#mv ./Common.bmg/*.txt.backup ./Common.bmg/*.txt
+mv ./Common.bmg/Common_E.txt.backup ./Common.bmg/Common_E.txt
+mv ./Common.bmg/Common_U.txt.backup ./Common.bmg/Common_U.txt
+mv ./Common.bmg/Common_F.txt.backup ./Common.bmg/Common_F.txt
+mv ./Common.bmg/Common_G.txt.backup ./Common.bmg/Common_G.txt
+mv ./Common.bmg/Common_I.txt.backup ./Common.bmg/Common_I.txt
+mv ./Common.bmg/Common_S.txt.backup ./Common.bmg/Common_S.txt
+mv ./Common.bmg/Common_M.txt.backup ./Common.bmg/Common_M.txt
+mv ./Common.bmg/Common_Q.txt.backup ./Common.bmg/Common_Q.txt
+mv ./Common.bmg/Common_J.txt.backup ./Common.bmg/Common_J.txt
 
 rm ./MenuSingle.d/bg/timg/*.tpl
 rm ./MenuSingle.d/control/timg/*.tpl
@@ -68,6 +77,7 @@ rm ./Race_J.d/game_image/timg/*.tpl
 rm ./Race_M.d/game_image/timg/*.tpl
 rm ./Race_Q.d/game_image/timg/*.tpl
 rm ./Race_S.d/game_image/timg/*.tpl
+rm ./Race_Dif.d/game_image/timg/*.tpl
 
 rm ./Race.d/control/timg/*.tpl
 rm ./Race.d/game_image/timg/*.tpl

@@ -108,6 +108,13 @@ cd ..
 cd ..
 cd ..
 
+cd Race_Dif.d/game_image/timg
+wimgt encode * $WSZSTFLAG
+
+cd ..
+cd ..
+cd ..
+
 printf "* Building Race.szs \n"
 
 cd Race.d/control/timg
@@ -137,7 +144,7 @@ cp -f ./UncompressedTemplates/Race.d/message_window/timg/*.tpl ./WorkingDir/Race
 cd UncompressedTemplates
 
 printf "* Creating all of the .szs files \n"
-wszst create MenuSingle_E.d MenuSingle_U.d MenuSingle_F.d MenuSingle_G.d MenuSingle_S.d MenuSingle_I.d MenuSingle_J.d MenuSingle_M.d MenuSingle_Q.d Font.d Race_E.d Race_U.d Race_F.d Race_G.d Race_I.d Race_J.d Race_M.d Race_Q.d Race_S.d
+wszst create MenuSingle_E.d MenuSingle_U.d MenuSingle_F.d MenuSingle_G.d MenuSingle_S.d MenuSingle_I.d MenuSingle_J.d MenuSingle_M.d MenuSingle_Q.d Font.d Race_E.d Race_U.d Race_F.d Race_G.d Race_I.d Race_J.d Race_M.d Race_Q.d Race_S.d Race_Dif.d
 cd ..
 cd WorkingDir
 rm MenuSingle.szs
@@ -174,7 +181,6 @@ mkdir riivolution
 mkdir hns
 cd hns
 mkdir navihns
-mkdir mkw-sp
 cd navihns
 mkdir extra
 mkdir packone
@@ -196,7 +202,6 @@ printf "** Moving Files \n"
 cp ./Tracklist/tracklist.txt NaviHNSPack
 cp -r ./Tracks/ NaviHNSPack/hns/navihns/packone
 cp -r ./Arenas/ NaviHNSPack/hns/navihns/packone
-cp -r ./mkw-spExtraFiles/ NaviHNSPack/hns/navihns/mkw-sp
 cp ./UncompressedTemplates/MenuSingle_E.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
 cp ./UncompressedTemplates/MenuSingle_F.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
 cp ./UncompressedTemplates/MenuSingle_G.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
@@ -216,6 +221,7 @@ cp ./UncompressedTemplates/Race_J.szs NaviHNSPack/hns/navihns/packone/regional/r
 cp ./UncompressedTemplates/Race_M.szs NaviHNSPack/hns/navihns/packone/regional/region-E/
 cp ./UncompressedTemplates/Race_Q.szs NaviHNSPack/hns/navihns/packone/regional/region-E/
 cp ./UncompressedTemplates/Race_S.szs NaviHNSPack/hns/navihns/packone/regional/region-P/
+cp ./UncompressedTemplates/Race_Dif.szs NaviHNSPack/hns/navihns/extra
 cp ./WorkingDir/*.szs NaviHNSPack/hns/navihns/extra
 cp -r ./StaticR/P/StaticR.rel NaviHNSPack/hns/navihns/packone/staticr/StaticR-P.rel
 cp -r ./StaticR/E/StaticR.rel NaviHNSPack/hns/navihns/packone/staticr/StaticR-E.rel
