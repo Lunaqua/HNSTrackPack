@@ -28,14 +28,14 @@
 	</patch>
 	<patch id="packOneEnabledNoPatch">
 		<file disc="/rel/StaticR.rel" external="/hns/navihns/packone/staticr/StaticR-{$__region}.rel" />
-		<folder disc="/Scene/UI" external="/hns/navihns/extra" />
+		<folder disc="/Scene/UI" external="/hns/navihns/extra" create="true" />
 		<folder disc="/Race/Course" external="/hns/navihns/packone/Arenas" />
 		<folder disc="/Race/Course" external="/hns/navihns/packone/Tracks" />
 		<folder disc="/Scene/UI" external="/hns/navihns/packone/regional/region-{$__region}" />
 	</patch>
 	<patch id="packOneNoMusic">
 		<file disc="/rel/StaticR.rel" external="/hns/navihns/packone/staticr/StaticR-{$__region}.rel" />
-		<folder disc="/Scene/UI" external="/hns/navihns/extra" />
+		<folder disc="/Scene/UI" external="/hns/navihns/extra" create="true" />
 		<folder disc="/Race/Course" external="/hns/navihns/packone/Arenas" />
 		<folder disc="/Race/Course" external="/hns/navihns/packone/Tracks" />
 		<folder disc="/Scene/UI" external="/hns/navihns/packone/regional/region-{$__region}" />
